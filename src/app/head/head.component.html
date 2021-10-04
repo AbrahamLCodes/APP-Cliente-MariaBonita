@@ -1,0 +1,20 @@
+<header *ngIf="['/login','/registro'].indexOf(this.router.url) == -1">
+  <main>
+    <button (click)="backClicked()" *ngIf="['/','/home','/login' ,'/registro'].indexOf(this.router.url) == -1"  class="back" ><i class="fas fa-arrow-circle-left"></i></button>
+
+    <div class="alertCont" *ngIf="['/login','/registro'].indexOf(this.router.url) == -1" [routerLink]="['/alertas']">
+      <div class="cantItem">
+        <p>0</p>
+      </div>
+      <button [routerLink]="['/alertas']" class="alertas"><i class="fas fa-inbox"></i></button>
+    </div>
+    
+    <div class="cestaCont" *ngIf="['/login','/registro'].indexOf(this.router.url) == -1" [routerLink]="['/cesta']">
+      <div class="cantItem">
+        <p>{{ carritoCount | async }}</p>
+      </div>
+      
+      <button class="cesta"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+  </main>
+</header>

@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+
+  <section class="section1">
+    <main>
+      <h1>{{ editar ? 'Update' : 'Save'}} <br> address</h1>
+      <br>
+      <div class="contbtn"></div>
+      <br>
+      <div class="papa-mapa">
+        <agm-map *ngIf="coordenadas" (mouseup)="mouseUp()" (touchend)="mouseUp()" [latitude]="coordenadas.latitude" [longitude]="coordenadas.longitude"  [zoom]="16" (centerChange)="cambiarCoordenada($event)" [disableDefaultUI]="true">        </agm-map>
+        <div *ngIf="coordenadas" class="map-center-overlay">
+          <img src="assets/icon/marker.png" width="32" height="32">
+        </div>
+      </div>
+      
+      
+      
+      <form action="">
+        <p>Sometimes Google Maps is not that accurate. If something in your address is wrong you can change it manually</p>
+        <input [(ngModel)]="direccion" [ngModelOptions]="{standalone: true}" type="text">
+        <p>Address's identifier (Ex: Work, Home, etc..)</p>
+        <input [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}" type="text">
+        <button (click)="submitDireccion()">{{ editar ? 'Update' : 'Save'}}</button>
+      </form>
+
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

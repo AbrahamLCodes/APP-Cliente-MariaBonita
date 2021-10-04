@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "nuevacentral",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3
+    }
+  },
+  "cordova": {}
+}

@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+
+
+  <section class="section1">
+    <main>
+      <h1>Elige tu <br>
+        sucursal
+      </h1>
+      <br>
+      <p>Para ingresar al menú</p>
+      <br>
+      <form action="">
+        <input type="text" placeholder="Dirección Guardada">
+        <button>Cambiar</button>
+      </form>
+      <div class="btnGroup">
+        <button class="domicilio">A domicilio</button>
+        <button class="ordenaYRecoge">Ordena y recoge</button>
+      </div>
+
+      <div class="sucursales">
+        
+
+          <div class="itemSuc" style="background-image: url(../../assets/images/tecnologico.png);">
+            <div class="divMain">
+            <div class="group">
+              <p>Suc. Tecnológico</p>
+              <button [routerLink]="['/menu']">Ver menú</button>
+            </div>
+          </div>
+          </div>
+
+          <div class="itemSuc" style="background-image: url(../../assets/images/consulado.png);">
+            <div class="divMain">
+              <div class="group">
+                <p>Suc. Consulado</p>
+                <button [routerLink]="['/menu']">Ver menú</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="itemSuc" style="background-image: url(../../assets/images/centro.png);">
+            <div class="divMain">
+              <div class="group">
+                <p>Suc. Centro</p>
+                <button [routerLink]="['/menu']">Ver menú</button>
+              </div>
+            </div>
+          </div>
+
+        
+      </div>
+
+
+    </main>
+  </section>
+
+  <section class="fondo"></section>
+</ion-content>

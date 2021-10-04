@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main *ngIf="usuario">
+      <h1>Método de pago</h1>
+      <br>
+      <div class="flexElement">
+       <p>Elige tu método de pago o añade una tarjeta.</p>
+      </div>
+      <br>
+      <div class="margTablet">
+        <div class="itemDes">
+          <p>Agregar tarjeta</p>
+          <button [routerLink]="['/anadirtarjeta']">Añadir</button>
+        </div>
+        <br>
+        <p><strong>Método preferido</strong></p>
+        <div class="itemDes">
+          <p><strong>Efectivo</strong></p>
+          <button (click)="elegirMetodo('EFECTIVO')">{{ usuario.metodo_pago == 'EFECTIVO' ? 'Selected' : 'Select'}}</button>
+        </div>
+        <div class="itemDes">
+          <p><strong>Monedero</strong></p>
+          <button (click)="elegirMetodo('MONEDERO')">{{ usuario.metodo_pago == 'MONEDERO' ? 'Selected' : 'Select'}}</button>
+        </div>
+        <div *ngFor="let tarjeta of tarjetas" class="itemDes">
+          <p><strong>{{tarjeta.nombre}}</strong></p>
+          <button (click)="elegirTarjeta(tarjeta)">{{ tarjetaFavorita(tarjeta) ? 'Selected' : 'Select'}}</button>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

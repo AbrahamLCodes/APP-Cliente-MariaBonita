@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main>
+      <img class="logo" src="../../assets/images/logo.png" alt="">
+      <br>
+      
+      <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+        <p>Correo electrónico</p>
+        <input formControlName="identifier" type="text" required style="border: solid 1px #4c0607;">
+        <p>Contraseña</p>
+        <input formControlName="password" type="password" style="border: solid 1px #4c0607;">
+        <p class="terminos">Al continuar aceptas nuestros <strong><a href="">terminos y condiciones</a></strong> así como <strong><a href=""> la políticas de privacidad</a></strong>.</p>
+
+        <button>Iniciar sesión</button>
+      </form>
+      <p class="registro">¿Todavía no tienes cuenta? <br><strong><a [routerLink]="['/registro']"> Regístrate</a></strong></p>
+      <p class="ingresarRedes"> O inicia sesión con:</p>
+      <div class="flexCont">
+        <button class="google" (click)="loginProvider('google', $event)"><i class="fab fa-google"></i></button>
+        <button class="facebook" (click)="loginProvider('facebook', $event)"><i class="fab fa-facebook-f"></i></button>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

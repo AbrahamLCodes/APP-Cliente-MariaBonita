@@ -1,0 +1,143 @@
+<ion-content [fullscreen]="true">
+
+
+  <section class="section1">
+    <main>
+      <h1>Menú
+      </h1>
+      <div class="flexElement">
+        <button (click)="presentAlertRadio();" style="width:100%;">Categorias</button>
+      </div>
+      <br>
+      <form action="">
+        <input type="text" placeholder="Buscar platillos">
+        <button>Buscar</button>
+      </form>
+
+      <p>&nbsp;Recomendados</p>
+
+      <div class="sucursales">
+
+          <div class="itemSuc">
+            <div class="img" [routerLink]="['/item']" style="background-image: url(../../assets/images/Lengua.jpg)">
+              <div class="cantItem">
+                <p>2</p>
+              </div>
+            </div>
+              <div class="group">
+                <button ><i class="fas fa-minus-circle"></i></button>
+                <button style="border-left: 1px solid white;"><i class="fas fa-plus-circle"></i></button>
+              </div>
+              <div class="info">
+                <div class="itemInfo">
+                  <p><small><strong>Lengua de res en mole</strong> <br> $120.00</small></p>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="itemSuc" [routerLink]="['/item']">
+            <div class="img" style="background-image: url(../../assets/images/Lengua.jpg)">
+             
+            </div>
+              <div class="group">
+                <button ><i class="fas fa-minus-circle"></i></button>
+                <button style="border-left: 1px solid white;"><i class="fas fa-plus-circle"></i></button>
+              </div>
+              <div class="info">
+                <div class="itemInfo">
+                  <p><small><strong>Lengua de res en mole</strong> <br> $120.00</small></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="itemSuc" [routerLink]="['/item']">
+            <div class="img" style="background-image: url(../../assets/images/Lengua.jpg)">
+            
+            </div>
+              <div class="group">
+                <button ><i class="fas fa-minus-circle"></i></button>
+                <button style="border-left: 1px solid white;"><i class="fas fa-plus-circle"></i></button>
+              </div>
+              <div class="info">
+                <div class="itemInfo">
+                  <p><small><strong>Lengua de res en mole</strong> <br> $120.00</small></p>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="itemSuc" [routerLink]="['/item']">
+            <div class="img" style="background-image: url(../../assets/images/Lengua.jpg)">
+             
+            </div>
+              <div class="group">
+                <button ><i class="fas fa-minus-circle"></i></button>
+                <button style="border-left: 1px solid white;"><i class="fas fa-plus-circle"></i></button>
+              </div>
+              <div class="info">
+                <div class="itemInfo">
+                  <p><small><strong>Lengua de res en mole</strong> <br> $120.00</small></p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="productos">
+        <div class="itemProducto">
+         
+          <div [routerLink]="['/item']" class="img" style="background-image: url(../../assets/images/Lengua.jpg);">
+           <div class="cantItem">
+             <p>2</p>
+           </div>
+          </div>
+       
+          <div class="info">
+            <div class="titulo">
+
+              <p><strong>Lengua de res en mole</strong></p> 
+              <div class="group">
+                <button ><i class="fas fa-minus-circle"></i></button>
+                <button style="border-left: 1px solid white;"><i class="fas fa-plus-circle"></i></button>
+              </div>
+            </div>
+            <p class="desc"><small>500gr de lengua bañada en lorem ipsum...</small></p>
+            <p class="precio"><strong>$90.00</strong></p>
+            <div class="etiquetas">
+              <p class="popular" style="background-color: #fba300;"><small>Popular</small></p>
+              <p class="nuevo" style="background-color: #8d4b00;"><small>Nuevo</small></p>
+              <p class="popular" style="background-color: #fba300;"><small>Popular</small></p>
+              <p class="nuevo" style="background-color: #8d4b00;"><small>Nuevo</small></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="itemProducto">
+          <div [routerLink]="['/item']" class="img" style="background-image: url(../../assets/images/Lengua.jpg);">
+           
+          </div>
+          <div class="info">
+            <div class="titulo">
+
+              <p><strong>Lengua de res en mole</strong></p> 
+              <div class="group">
+                <button ><i class="fas fa-minus-circle"></i></button>
+                <button style="border-left: 1px solid white;"><i class="fas fa-plus-circle"></i></button>
+              </div>
+            </div>
+            <p class="desc"><small>500gr de lengua bañada en lorem ipsum...</small></p>
+            <p class="precio"><strong>$90.00</strong></p>
+            <div class="etiquetas">
+              <p class="popular" style="background-color: #fba300;"><small>Popular</small></p>
+              <p class="nuevo" style="background-color: #8d4b00;"><small>Nuevo</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </section>
+
+  <section class="fondo"></section>
+</ion-content>

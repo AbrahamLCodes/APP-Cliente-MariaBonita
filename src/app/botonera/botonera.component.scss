@@ -1,0 +1,262 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .menuDesk{
+        display: none;
+      } 
+.botonera{
+    overflow: hidden;
+    width: 100%;
+    left: 0%;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    padding: 10px 0px 15px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #20ab8d, $alpha: .7);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+.botonera main{
+    width: 95%;
+    height: 100%;
+    margin: 0% 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.botonera main button{
+    width: 21%;
+    font-size: 20pt;
+    color: #fff;
+    padding: 2% 1%;
+    margin:0px 2%;
+    background-color: transparent;
+}
+.botonera main .orange{
+    width: 21%;
+    height: 100%;
+    border-radius: 50px;
+    color: #fff;
+    margin:0px;
+    margin-left: 2%;
+    background-color: #eb4a44;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .menuDesk{
+        display: none;
+      } 
+    .botonera{
+        overflow: hidden;
+        width: 100%;
+        left: 0%;
+        border-radius: 0px;
+        position: fixed;
+        bottom: 0;
+        height: auto;
+        padding: 10px 0px 15px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #20ab8d, $alpha: .7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    .botonera main{
+        width: 95%;
+        height: 100%;
+        margin: 0% 2.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .botonera main button{
+        width: 21%;
+        font-size: 20pt;
+        color: #fff;
+        padding: 2% 1%;
+        margin:0px 2%;
+        background-color: transparent;
+        
+    }
+    .botonera main .orange{
+        width: 21%;
+        height: 100%;
+        border-radius: 50px;
+        color: #fff;
+        margin:0px;
+        margin-left: 2%;
+        background-color: #eb4a44;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+    .botonera{
+        overflow: hidden;
+        width: 100%;
+        left: 0%;
+        border-radius: 0px;
+        position: fixed;
+        bottom: 0;
+        height: auto;
+        padding: 10px 0px 15px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #20ab8d, $alpha: .7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    .botonera main{
+        width: 95%;
+        height: 100%;
+        margin: 0% 2.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .botonera main button{
+        width: 21%;
+        font-size: 20pt;
+        color: #fff;
+        padding: 2% 1%;
+        margin:0px 2%;
+        background-color: transparent;
+    }
+    .botonera main .orange{
+        width: 21%;
+        height: 100%;
+        border-radius: 50px;
+        color: #fff;
+        margin:0px;
+        margin-left: 2%;
+        background-color: #eb4a44;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 992px) {
+    .botonera{
+        overflow: hidden;
+        width: 100%;
+        left: 0%;
+        border-radius: 0px;
+        position: fixed;
+        bottom: 0;
+        height: auto;
+        padding: 10px 0px 15px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #20ab8d, $alpha: .7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    .botonera main{
+        width: 95%;
+        height: 100%;
+        margin: 0% 2.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .botonera main button{
+        width: 21%;
+        font-size: 20pt;
+        color: #fff;
+        padding: 2% 1%;
+        margin:0px 2%;
+        background-color: transparent;
+    }
+    .botonera main .orange{
+        width: 21%;
+        height: 100%;
+        border-radius: 50px;
+        color: #fff;
+        margin:0px;
+        margin-left: 2%;
+        background-color: #eb4a44;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1366px) {
+    .botonera{
+      display: none;
+    } 
+    .menuDesk{
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        height: 70px;
+        width: 80%;
+        left: 5%;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+      .menuDesk main{
+        width: 100%;
+        height: 100%;
+        padding: 10px 0px;
+    }
+      .menuDesk ol {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      } 
+      .menuDesk ol li:not(.logo){
+        margin: 0px 10px;
+        background-color: #cca23a;
+        color: #4c0607;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+       
+      } 
+      .menuDesk ol .logo{
+        margin: 0px 10px;
+        width: auto;
+        height: 70px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+      .menuDesk ol .logo img{
+        width: auto;
+        height: 40px;
+
+      }
+      .menuDesk ol li p{
+color: white;
+      } 
+}

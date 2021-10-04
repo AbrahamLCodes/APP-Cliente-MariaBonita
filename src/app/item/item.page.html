@@ -1,0 +1,70 @@
+<ion-content [fullscreen]="true">
+  
+  <div *ngIf="producto" class="promos">
+    <ion-slides>
+      <ion-slide [routerLink]="['/home']" style="background-image: url(../../assets/images/promo-1.jpg);"></ion-slide>
+    </ion-slides>
+  </div>
+
+  <section *ngIf="producto" class="section1">
+    <main>
+      <h1 class="titulo">{{ producto.titulo }}</h1>
+      <br>
+      <div class="vistaDesk">
+        <div class="elementLeft">
+          <div class="flexElement">
+            <p>&nbsp;$ {{producto.precio.toFixed(2)}}</p>
+          </div>
+          <br>
+          <ion-slides pager="false" [options]="slideOpts">
+            <ion-slide class="imagen" [style]="apiclient.getBackgroundImagenURL(producto.imagen.url)"></ion-slide>
+          </ion-slides>
+        </div>
+        <br>
+        <div class="elementRight">
+          <div class="etiquetas">
+            <ion-badge *ngIf="producto.popular" class="popular">Popular</ion-badge>
+            <ion-badge *ngIf="producto.nuevo" class="nuevo">Nuevo</ion-badge>
+            <ion-badge *ngIf="producto.recomendado" class="nuevo">Recomendado</ion-badge>
+            <ion-badge *ngIf="producto.promocion" class="nuevo">Promo</ion-badge>
+          </div>
+
+          <p>{{ producto.descripcion }}</p>
+
+          <div class="opciones">
+            <p><strong>Personaliza tu pedido</strong></p>
+            <p>¿Qué quieres agregar a tu pedido?</p>
+            <ion-item lines="none" style="border-radius: 10px; margin: 3% 0%; ">
+              <ion-textarea [(ngModel)]="comentarios" required rows="6" cols="10" placeholder="Commentarios*"></ion-textarea>
+            </ion-item>
+          </div>
+    
+          <div class="extras">
+            <p><strong>Extras</strong></p>
+            <div class="list">
+              <ion-list *ngFor="let tipo of tipos"  style=" background-color: transparent; margin: 5px 0px;">
+                <h2>{{ tipo.title }}</h2>
+                <ion-item *ngFor="let p of productosEnTipo" lines="none" color="black">
+                  <ion-badge color="dark" slot="start"></ion-badge>
+                  <ion-label>{{ p.producto.titulo}} <br> <small>${{ p.producto.precio }}</small></ion-label>
+                  <div *ngIf="p.opcion.allow_quantity" slot="end" class="fin">
+                    <ion-label>You can choose {{ p.opcion.max }}</ion-label>
+                    <ion-button (click)="removeOpcional(p)" color="dark"><ion-icon name="remove"></ion-icon></ion-button>
+                    <ion-label>{{ htmlOpcionalCount(p) }}</ion-label>
+                    <ion-button (click)="addOpcional(p)" color="dark"><ion-icon name="add"></ion-icon></ion-button>
+                  </div>
+                  <div *ngIf="!p.opcion.allow_quantity" slot="end">
+                    <ion-toggle (ionChange)="toggleOpcional(p)"></ion-toggle>
+                  </div>
+                </ion-item>
+              </ion-list>
+            </div>
+          </div>
+          <ion-label style="margin-bottom:50px !important;"><b>Subtotal:</b> ${{ calcularSubTotal().toFixed(2) }}</ion-label  >
+          <button  style="margin-top:20px !important;"(click)="agregarAlCarrito()" class="btnPagar">Añadir al carrito</button>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

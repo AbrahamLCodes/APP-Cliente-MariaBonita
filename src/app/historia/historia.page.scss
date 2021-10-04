@@ -1,0 +1,105 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section1{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+    }
+    .section1 main{
+      width: 90%;
+      padding: 80px 0px 0px;
+      margin: 0px 5%;
+    }
+    .section1 main p{
+       line-height: 1.2;
+      }
+    .section1 main .ordenar{
+      width: auto;
+      height: auto;
+      padding: 15px 20%;
+      font-size: 17pt;
+      margin: 25px 0px;
+      border-radius: 50px;
+    }
+    .section1 main .btnLines{
+      width: 100%;
+      height: auto;
+      margin-bottom: 100px;
+    }
+    
+    .section1 main .btnLines .btnItem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0px;
+    }
+    .section1 main .btnLines .btnItem p{
+      width: 80%;
+      margin-right: auto;
+    }
+    .section1 main .btnLines .btnItem button{
+      width: auto;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+    
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20%;
+      }
+      .section1 main{
+        width: 90%;
+        padding: 15% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main p{
+        line-height: 1.2;
+       }
+      .section1 main .ordenar{
+        width: auto;
+        height: auto;
+        padding: 2.5% 10%;
+        font-size: 5vw;
+        margin: 25px 0px;
+        border-radius: 50px;
+      }
+      .section1 main .btnLines{
+        width: 100%;
+        height: auto;
+        margin-bottom: 25%;
+      }
+      
+      .section1 main .btnLines .btnItem{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0px;
+      }
+      .section1 main .btnLines .btnItem p{
+        width: 80%;
+        margin-right: auto;
+      }
+      .section1 main .btnLines .btnItem button{
+        width: auto;
+        padding: 2.5% 5%;
+        border-radius: 50px;
+      }
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}

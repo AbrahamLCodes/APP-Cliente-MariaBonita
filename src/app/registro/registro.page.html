@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main>
+      <img class="logo" src="../../assets/images/logo.png" alt="">
+      <br>
+     
+      <form action="" [formGroup]="registroForm" (ngSubmit)="submitRegistro()">
+        <input formControlName="username" placeholder="Nombre completo" type="text" style="border: solid 1px #4c0607;">
+        <input formControlName="email" placeholder="Correo electrónico" type="text" required style="border: solid 1px #4c0607;">
+        <input formControlName="telefono" placeholder="Número de télefono" type="number" style="border: solid 1px #4c0607;">
+        <input formControlName="nacimiento" placeholder="Cumpleaños" type="date" style="border: solid 1px #4c0607;">
+        <input formControlName="password" placeholder="Contraseña (Min 6 caracteres)" type="password" style="border: solid 1px #4c0607;">
+        <input formControlName="confirmPassword" placeholder="Confirmar contraseña" type="password" style="border: solid 1px #4c0607;">
+        <p class="terminos">Al continuar usando nuestros servicios aceptas <strong><a href="">nuestros términos y condiciones</a></strong> <strong><a href=""> así cómo las políticas de privacidad</a></strong>.</p>
+        <button>Sign up</button>
+      </form>
+
+      <p class="ingresarRedes">O registrate con:</p>
+      <div class="flexCont">
+        <button class="google"><i class="fab fa-google"></i></button>
+        <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+        <button class="apple"><i class="fab fa-apple"></i></button>
+      </div>
+    </main>
+  </section>
+
+  <section class="fondo"></section>
+</ion-content>

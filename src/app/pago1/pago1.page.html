@@ -1,0 +1,71 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main *ngIf="infoCompra">
+      <h1>¡Casi terminamos!</h1>
+      <br>
+      <!-- <div class="itemDes">
+        <p><strong>Selecciona tu dirección de envío</strong></p>
+      </div> -->
+
+      <!-- <form action="">
+        <input type="text" placeholder="Dirección Guardada">
+        <button>Cambiar</button>
+      </form> -->
+      
+      <div class="flexElement">
+        <p><strong>A pagar </strong></p>
+        <button><span>${{infoCompra.total.toFixed(2)}}</span></button>
+      </div>
+      <br>
+
+      <div class="margTablet">
+
+        <ion-item lines="none" color="black" style="border-radius: 50px; margin: 3% 0%;">
+          <ion-label>Tipo de pedido</ion-label>
+          <ion-select [(ngModel)]="tipoOrden" (ngModelChange)="direccionChanged()" interface="action-sheet" multiple="false" placeholder="Choose one">
+            <ion-select-option value="PICKUP">Ordena y recoge</ion-select-option>
+            <ion-select-option value="DELIVERY">Entrega</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item *ngIf="tipoOrden == 'DELIVERY'" lines="none" color="black" style="border-radius: 50px; margin: 3% 0%;">
+          <ion-label>Choose an address</ion-label>
+          <ion-select [(ngModel)]="direccionSelected"  interface="action-sheet" multiple="false" placeholder="Choose one">
+            <ion-select-option *ngFor="let direccion of direcciones" [value]="direccion.id">{{ direccion.nombre }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <div class="itemDes">
+          <p><strong>Selecciona tu método de pago</strong></p>
+        </div>
+        
+        <br>
+
+        <div *ngIf="sucursal.metodos_pago.pagoMonedero == true" class="itemDes" >
+          <div class="textInfo">
+            <p><strong>Monedero: </strong>${{ usuario.monedero }}</p>
+            <p *ngIf="usuario.monedero <= infoCompra.total"><small>Para usar su billetera, el saldo debe ser igual o mayor que el precio del pedido.</small></p>
+          </div>
+          <button *ngIf="usuario.monedero >= infoCompra.total">Seleccionar</button>
+        </div>
+
+        <div *ngIf="sucursal.metodos_pago.pagoEfectivo == true" class="itemDes">
+          <p><strong>Efectivo</strong></p>
+          <button (click)="efectivo();">Seleccionar</button>
+        </div>
+
+        <div *ngIf="sucursal.metodos_pago.pagoTarjeta == true" class="itemDes">
+          <p><strong>Tarjeta de credito debito</strong></p>
+        </div>
+
+        <form *ngIf="sucursal.metodos_pago.pagoTarjeta == true" >
+          <input style="color: black" [(ngModel)]="nombreTarjeta" [ngModelOptions]="{standalone: true}" type="text" placeholder="Nombre de titular">
+        </form>
+        <ngx-stripe-card *ngIf="sucursal.metodos_pago.pagoTarjeta == true" [options]="cardOptions" [elementsOptions]="elementsOptions"></ngx-stripe-card>
+        <button *ngIf="sucursal.metodos_pago.pagoTarjeta == true"  style="align: center !important;" (click)="createToken()" style="margin: 30px;" type="submit">Select</button>
+      
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

@@ -1,0 +1,345 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section1{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+    }
+    .section1 main{
+      width: 90%;
+      padding: 80px 0px 0px;
+      margin: 0px 5%;
+    }
+    .section1 main .monedero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .section1 main .monedero p{
+        width: 100%;
+        text-align: left;
+        margin: 10px 0px;
+      }
+    .section1 main .monedero .dineros{
+      width: auto;
+      height: auto;
+      padding: 15px 20%;
+      font-size: 17pt;
+      margin: 0px 0px;
+      border-radius: 50px;
+    }
+    .section1 main .movimientos{
+        width: 100%;
+        height: auto;
+        
+    }
+    .section1 main .movimientos .movItem{
+        width: 100%;
+        height: auto;
+        margin: 2% 0%;
+        padding: 2% 1%;
+        border-bottom: solid 1px #aaaaaa;
+        
+    }
+    .section1 main .movimientos .movItem .headMov{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 2%;
+    }
+    .section1 main .movimientos .movItem .headMov .cancelado{
+        width: auto;
+        padding: 2% 4%;
+        background-color: #ffaa00;
+        border-radius: 50px;
+        margin-right: auto;
+        color: white;
+    }
+    .section1 main .movimientos .movItem .headMov .entregado{
+        width: auto;
+        padding: 2% 4%;
+        background-color:#4c0607 ;
+        border-radius: 50px;
+        margin-right: auto;
+        color: white;
+    }
+    .section1 main .movimientos .movItem .info {
+width: 100%;
+margin-top: 5%;
+    }
+    .section1 main .movimientos .movItem .info p{
+        margin: 5px 0px;
+        padding: 0px 1%;
+            }
+    .section1 main .movimientos .movItem .info .identificador{
+        color: #535353;
+    }
+
+    .section1 main .movimientos .movItem .info .cantidad{
+        font-size: 6vw;
+        margin: 2% 0%;
+    }
+
+    .section1 main .movimientos .movItem .info .infodesc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .section1 main .movimientos .movItem .info .infodesc .cant{
+        width: auto;
+        padding: 2% 5%;
+        margin-right: 4%;
+        background-color: #4c0607;
+        border-radius: 50px;
+        color: white;
+    }
+    .section1 main .movimientos .movItem .info .infodesc .desc{
+        width: 100%;
+    }
+    .section1 main .movimientos .movItem .info .infodesc .precios{
+        width: auto;
+        text-align: right;
+    }
+  
+    
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20%;
+      }
+      .section1 main{
+        width: 90%;
+        padding: 15% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main .monedero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .section1 main .monedero p{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+      }
+    .section1 main .monedero .dineros{
+      width: auto;
+      height: auto;
+      padding: 15px 20%;
+      font-size: 17pt;
+      margin: 0px 0px;
+      border-radius: 50px;
+    }
+    .section1 main .movimientos{
+        width: 100%;
+        height: auto;
+        
+    }
+    .section1 main .movimientos .movItem{
+        width: 100%;
+        height: auto;
+        margin: 2% 0%;
+        padding: 2% 1%;
+        border-bottom: solid 1px #aaaaaa;
+        
+    }
+    .section1 main .movimientos .movItem .headMov{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 2%;
+    }
+    .section1 main .movimientos .movItem .headMov .cancelado{
+        width: auto;
+        padding: 2% 4%;
+        background-color: #ffaa00;
+        border-radius: 50px;
+        margin-right: auto;
+        color: white;
+    }
+    .section1 main .movimientos .movItem .headMov .entregado{
+        width: auto;
+        padding: 2% 4%;
+        background-color:#4c0607 ;
+        border-radius: 50px;
+        margin-right: auto;
+        color: white;
+    }
+    .section1 main .movimientos .movItem .info {
+width: 100%;
+margin-top: 5%;
+    }
+    .section1 main .movimientos .movItem .info p{
+        margin: 5px 0px;
+        padding: 0px 1%;
+            }
+    .section1 main .movimientos .movItem .info .identificador{
+        color: #535353;
+    }
+
+    .section1 main .movimientos .movItem .info .cantidad{
+        font-size: 6vw;
+        margin: 2% 0%;
+    }
+
+    .section1 main .movimientos .movItem .info .infodesc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .section1 main .movimientos .movItem .info .infodesc .cant{
+        width: auto;
+        padding: 2% 5%;
+        margin-right: 4%;
+        background-color: #4c0607;
+        border-radius: 50px;
+        color: white;
+    }
+    .section1 main .movimientos .movItem .info .infodesc .desc{
+        width: 100%;
+    }
+    .section1 main .movimientos .movItem .info .infodesc .precios{
+        width: auto;
+        text-align: right;
+    }
+  
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1366px) {
+        .section1{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+          }
+          .section1 main{
+            width: 90%;
+            max-width: 1440px;
+            padding: 7% 0px 0px;
+            margin: 0px auto;
+            text-align: center;
+          }
+          .section1 main .monedero{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+          .section1 main .monedero p{
+            width: 100%;
+            text-align: center;
+            margin: 10px 0px;
+          }
+        .section1 main .monedero .dineros{
+          width: auto;
+          height: auto;
+          padding: 15px 20%;
+          font-size: 17pt;
+          margin: 0px 0px;
+          border-radius: 50px;
+        }
+        .section1 main .movimientos{
+            width: 50%;
+            margin: 0% 25%;
+            height: auto;
+            
+        }
+        .section1 main .movimientos .movItem{
+            width: 100%;
+            height: auto;
+            margin: 2% 0%;
+            padding: 2% 1%;
+            border-bottom: solid 1px #aaaaaa;
+            
+        }
+        .section1 main .movimientos .movItem .headMov{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            margin-bottom: 2%;
+        }
+        .section1 main .movimientos .movItem .headMov .cancelado{
+            width: auto;
+            padding: 2% 4%;
+            background-color: #ffaa00;
+            text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.78);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.78);
+            border-radius: 50px;
+            margin-right: auto;
+            color: white;
+        }
+        .section1 main .movimientos .movItem .headMov .entregado{
+            width: auto;
+            padding: 2% 4%;
+            background-color:#4c0607 ;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.78);
+            border-radius: 50px;
+            margin-right: auto;
+            color: white;
+        }
+        .section1 main .movimientos .movItem .info {
+    width: 100%;
+    margin-top: 5%;
+        }
+        .section1 main .movimientos .movItem .info p{
+            margin: 10px 0px;
+            padding: 0px 1%;
+            text-align: left;
+                }
+        .section1 main .movimientos .movItem .info .identificador{
+            color: #535353;
+        }
+    
+        .section1 main .movimientos .movItem .info .cantidad{
+            font-size: 6vw;
+            margin: 2% 0%;
+        }
+    
+        .section1 main .movimientos .movItem .info .infodesc{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .section1 main .movimientos .movItem .info .infodesc .cant{
+            width: auto;
+            padding: 2% 5%;
+            margin-right: 4%;
+            background-color: #4c0607;
+            border-radius: 50px;
+            color: white;
+        }
+        .section1 main .movimientos .movItem .info .infodesc .desc{
+            width: 100%;
+        }
+        .section1 main .movimientos .movItem .info .infodesc .precios{
+            width: auto;
+            text-align: right;
+        }
+      .reOrder{
+          font-size: 13pt;
+      }
+    }

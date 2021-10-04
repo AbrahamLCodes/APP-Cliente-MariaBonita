@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main>
+      <h1>Mis direcciones</h1>
+      <br>
+      <p>Seleccione una dirección como su preferida o agregue una nueva dirección</p>
+      <div class="contbtn">
+        <button (click)="nuevaDireccion()">Agregar</button>
+      </div>
+      <br>
+
+      <div class="btnLines">
+        <div class="btnItem" *ngFor="let direccion of direcciones">
+          <p><strong>{{direccion.nombre}}</strong><br>
+          <small>{{ direccion.direccion }}</small></p>
+          <button (click)="seleccionarDireccion(direccion)" class="selecciona">{{direccion.seleccionada ? 'Selected' : 'Select'}}</button>
+          <button (click)="editarDireccion(direccion)"><i class="fas fa-edit"></i></button>
+          <button (click)="eliminarDireccion(direccion)"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

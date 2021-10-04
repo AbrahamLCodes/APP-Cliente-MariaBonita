@@ -1,0 +1,259 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section1{
+      width: 100%;
+      height: auto;
+    }
+    .section1 main{
+      width: 90%;
+      padding: 80px 0px 0px;
+      margin: 0px 5%;
+      margin-bottom: 30%;
+    }
+    .section1 main .maps{
+        width: 100%;
+        margin: 3% 0%;
+        height: 30vh;
+      }
+  
+    .section1 main .btnLines{
+      width: 100%;
+      height: auto;
+    }
+    
+    .section1 main .btnLines .btnItem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0px;
+    }
+    .section1 main .btnLines .btnItem .txt{
+      width: 80%;
+      margin-right: 5%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .section1 main .btnLines .btnItem .llamar{
+        margin-top: 3%;
+        margin-right: 3%;
+        padding: 5px 10px;
+        display: flex;
+      }
+      .section1 main .btnLines .btnItem .nip{
+        margin-top: 3%;
+        background-color: #4c0607;
+        padding: 5px 10px;
+        display: flex;
+      }
+    .section1 main .btnLines .btnItem .fotoPerfil{
+      width: 20%;
+      min-width: 65px;
+      min-height: 65px;
+      background-size: cover;
+      background-position: center center;
+      background-color: transparent;
+      border: solid 3px white;
+      border-radius: 50%;
+      padding: 0px;
+    }
+
+    .section1 main .btnLines .btnItem .fotoPerfil{
+        width: 20%;
+        min-width: 65px;
+        min-height: 65px;
+        background-size: cover;
+        background-position: center center;
+        background-color: transparent;
+        border: solid 3px white;
+        border-radius: 50%;
+        padding: 0px;
+      }
+      .section1 main .btnLines .btnItem .indicador{
+        background-color: #4c0607;
+      }
+    
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 30%;
+      }
+      .section1 main{
+        width: 90%;
+        padding: 15% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main .maps{
+        width: 100%;
+        margin: 3% 0%;
+        height: 30vh;
+      }
+  
+    .section1 main .btnLines{
+      width: 100%;
+      height: auto;
+      margin-bottom: 100px;
+    }
+    
+    .section1 main .btnLines .btnItem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0px;
+    }
+    .section1 main .btnLines .btnItem .txt{
+      width: 80%;
+      margin-right: 5%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .section1 main .btnLines .btnItem .llamar{
+        margin-top: 3%;
+        margin-right: 3%;
+        padding: 10px 30px;
+        display: flex;
+      }
+      .section1 main .btnLines .btnItem .nip{
+        margin-top: 3%;
+        background-color: #4c0607;
+        padding: 10px 30px;
+        display: flex;
+      }
+    .section1 main .btnLines .btnItem .fotoPerfil{
+      width: 20%;
+      min-width: 65px;
+      min-height: 65px;
+      background-size: cover;
+      background-position: center center;
+      background-color: transparent;
+      border: solid 3px white;
+      border-radius: 50%;
+      padding: 0px;
+    }
+
+    .section1 main .btnLines .btnItem .fotoPerfil{
+        width: 20%;
+        min-width: 165px;
+        min-height: 165px;
+        background-size: cover;
+        background-position: center center;
+        background-color: transparent;
+        border: solid 3px white;
+        border-radius: 50%;
+        padding: 0px;
+      }
+      .section1 main .btnLines .btnItem .indicador{
+        background-color: #4c0607;
+      }
+    
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1366px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+      }
+      .section1 main{
+        width: 90%;
+        max-width: 1440px;
+        padding: 7% 0px 0px;
+        margin: 0px auto;
+        text-align: center;
+      }
+      .section1 main .deskElement{
+        width: 100%;
+        margin: 3% 0%;
+        height: auto;
+        display: flex;
+        justify-content: center ;
+        align-items: flex-start;
+      }
+      .section1 main .maps{
+        width: 60%;
+        margin: 0% 5%;
+        height: 50vh;
+      }
+  
+    .section1 main .btnLines{
+      width: 50%;
+      height: auto;
+      margin: 0px auto;
+      margin-bottom: 0px;
+    }
+    
+    .section1 main .btnLines .btnItem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      margin: 15px 0px;
+    }
+    .section1 main .btnLines .btnItem .txt{
+      width: 80%;
+      margin-right: 5%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .section1 main .btnLines .btnItem .llamar{
+        margin-top: 2%;
+        margin-right: 2%;
+        padding: 10px 30px;
+        font-size: 15pt;
+        display: flex;
+      }
+      .section1 main .btnLines .btnItem .nip{
+        margin-top: 2%;
+        background-color: #4c0607;
+        padding: 10px 30px;
+        font-size: 15pt;
+        display: flex;
+      }
+    .section1 main .btnLines .btnItem .fotoPerfil{
+      width: 10%;
+      min-width: 45px;
+      min-height: 45px;
+      background-size: cover;
+      background-position: center center;
+      background-color: transparent;
+      border: solid 3px white;
+      border-radius: 50%;
+      padding: 0px;
+    }
+
+    .section1 main .btnLines .btnItem .fotoPerfil{
+        width: 20%;
+        min-width: 165px;
+        min-height: 165px;
+        background-size: cover;
+        background-position: center center;
+        background-color: transparent;
+        border: solid 3px white;
+        border-radius: 50%;
+        padding: 0px;
+      }
+      .section1 main .btnLines .btnItem .indicador{
+        background-color: #4c0607;
+        font-size: 13pt;
+      }
+      lord-icon{
+        width: 50px;
+        height: 50px;
+      }
+    }

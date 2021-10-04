@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+
+
+  <section class="section1">
+    <main *ngIf="usuario">
+      <h1>Monedero electrónico 
+      </h1>
+      <br>
+      <div class="monedero">    
+          <p><strong>Dinero electrónico</strong></p>
+          <button class="dineros"><span>${{usuario.monedero}}</span></button>
+      </div>
+
+      <div class="movimientos">
+
+        <!--
+        <div class="movItem">
+          <div class="headMov">
+            <p class="deposito">Depósito</p>
+            <p>Hace 21 horas</p>
+          </div>
+
+          <div class="info">
+            <p>Rembolso por pedido cancelado:</p>
+            <p class="identificador">05DFFDF-4165DFG0-DFGD25</p>
+            <p class="cantidad"><strong>$160.00</strong></p>
+          </div> 
+        </div> -->
+
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

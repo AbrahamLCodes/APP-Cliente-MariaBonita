@@ -1,0 +1,8 @@
+{
+  "name": "nuevacentral",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

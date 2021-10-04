@@ -1,0 +1,230 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section1{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+    }
+    .section1 main{
+      width: 90%;
+      padding: 80px 0px 0px;
+      margin: 0px 5%;
+    }
+    .section1 main .correoInfo{
+        font-size: 4vw;
+        color: #747474;
+    }
+
+    .section1 main .btnLines{
+      width: 100%;
+      margin-top: 10%;
+      height: auto;
+    }
+    .section1 main .btnLines .eliminar{
+        background-color: red;
+    }
+    .section1 main .btnLines .btnItem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0px;
+    }
+    .section1 main .btnLines .btnItem p{
+      width: 80%;
+      margin-right: auto;
+    }
+    .section1 main .btnLines .btnItem button{
+      width: auto;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+    .section1 main .redes{
+        margin: 3% 0%; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .section1 main .redes p{
+        width: 100%;
+        text-align: center;
+      }
+
+      .section1 main .redes a{
+        margin: 3%;
+        font-size: 8vw;
+      }
+      .section1 main .contLogout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section1 main .contLogout .logout{
+        background-color: #4c0607;
+      }
+    
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20%;
+      }
+      .section1 main{
+        width: 90%;
+        padding: 15% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main .correoInfo{
+        font-size: 3vw;
+        color: #747474;
+    }
+
+    .section1 main .btnLines{
+      width: 100%;
+      margin-top: 10%;
+      height: auto;
+    }
+    .section1 main .btnLines .eliminar{
+        background-color: red;
+    }
+    .section1 main .btnLines .btnItem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0px;
+    }
+    .section1 main .btnLines .btnItem p{
+      width: 80%;
+      margin-right: auto;
+    }
+    .section1 main .btnLines .btnItem button{
+      width: auto;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+    .section1 main .redes{
+        margin: 3% 0%; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .section1 main .redes p{
+        width: 100%;
+        text-align: center;
+      }
+
+      .section1 main .redes a{
+        margin: 3%;
+        font-size: 4vw;
+      }
+      .section1 main .contLogout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section1 main .contLogout .logout{
+        background-color: #4c0607;
+      }
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1366px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+        text-align: center;
+      }
+      .section1 main{
+        width: 90%;
+        max-width: 1440px;
+        padding: 7% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main .correoInfo{
+        font-size: 1.5vw;
+        color: #747474;
+    }
+
+    .section1 main .btnLines{
+      width: 100%;
+      margin: auto;
+      margin-top: 2%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .section1 main .btnLines .eliminar{
+        background-color: red;
+    }
+    .section1 main .btnLines .btnItem{
+      width: 31.3%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1%;
+    }
+    .section1 main .btnLines .btnItem p{
+      width: 80%;
+      margin-right: auto;
+      text-align: left;
+    }
+    .section1 main .btnLines .btnItem button{
+      width: auto;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 13pt;
+    }
+    .section1 main .redes{
+        margin: 3% 0%; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .section1 main .redes p{
+        width: 100%;
+        text-align: center;
+      }
+
+      .section1 main .redes a{
+        margin: 1.5%;
+        font-size: 2vw;
+      }
+      .section1 main .contLogout{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section1 main .contLogout .logout{
+        background-color: #4c0607;
+        font-size: 15pt;
+      }
+    }

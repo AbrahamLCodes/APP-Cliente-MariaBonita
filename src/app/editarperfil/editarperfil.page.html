@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main *ngIf="usuario">
+      <h1>Editar perfil
+      </h1>
+      <br>
+      <br>
+     
+      <form [formGroup]="usuarioForm" (ngSubmit)="submitInfo()">
+        <p><strong>Tu información</strong></p>
+        <br>
+        <p>Nombre completo</p>
+        <input formControlName="username" type="text" required style="border: solid 1px #4c0607;">
+
+        <ion-item lines="none" color="black" style="margin: 2% 0%; border-radius: 50px; padding-left: 0px; display: flex; justify-content: center; align-items: center;">
+          <ion-label>Cumpleaños</ion-label>
+          <ion-datetime formControlName="nacimiento" displayFormat="YYYY-MM-DD" placeholder="Elige una fecha"></ion-datetime>
+        </ion-item>
+
+        <p>Correo electrónico</p>
+        <input formControlName="email" type="email" required style="border: solid 1px #4c0607;">
+
+        <p>Contraseña</p>
+        <input formControlName="password" type="password" required style="border: solid 1px #4c0607;">
+
+        <p>Confirma tu contraseña</p>
+        <input formControlName="passwordConfirm" type="password" required style="border: solid 1px #4c0607;">
+
+        <p><small>
+          Al continuar con el proceso, aceptas nuestros
+          terminos y condiciones de servicio.</small></p>
+
+        <button>Enviar</button>
+      </form>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

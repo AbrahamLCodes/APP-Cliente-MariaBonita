@@ -1,0 +1,67 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main *ngIf="sucursalItem">
+    <h1 style="text-align: center;">To Go</h1>
+    <br>
+      <br>
+      <form action="">
+        <input style="color: black !important;" [(ngModel)]="busquedaProductos" [ngModelOptions]="{standalone: true}" type="text" placeholder="Search items...">
+      </form>
+
+      <p *ngIf="productosPromos.length > 0">&nbsp;Promos</p>
+      <ion-slides *ngIf="productosPromos.length > 0" pager="false" [options]="slideOpts" class="promociones">
+        <ion-slide *ngFor="let producto of productosPromos" class="itemSuc" (click)="goToProducto(producto)" [style]="getBackgroundImagen(producto)">
+          &nbsp;
+        </ion-slide>
+      </ion-slides>
+
+      <p *ngIf="productosRecomendados.length > 0" >&nbsp;Recommended</p>
+
+      <ion-slides *ngIf="productosRecomendados.length > 0" pager="false" class="sucursales">
+        <ion-slide *ngFor="let producto of productosRecomendados" class="itemSuc" style="display: block;">
+          <div class="img" (click)="goToProducto(producto)" [style]="getBackgroundImagen(producto)">
+            
+          </div>
+          <div class="info">
+            <div class="itemInfo">
+              <p><small><strong>{{producto.titulo}}</strong> <br> ${{producto.precio}}</small></p>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+
+      <div class="filtros">
+        <ion-item>
+          <ion-label>Categories:</ion-label>
+          <ion-select [(ngModel)]="filtro" (ngModelChange)="filtrarProducto()">
+            <ion-select-option *ngFor="let categoria of categorias" [value]="categoria.id">{{categoria.titulo}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+      <br>
+      <div class="productos">
+        <div class="itemProducto" *ngFor="let producto of productosFiltered | filter:busquedaProductos">
+          <div  class="img" (click)="goToProducto(producto)" [style]="getBackgroundImagen(producto)">
+          </div>
+
+          <div class="info">
+            <div class="titulo">
+              <p><strong>{{ producto.titulo }}</strong></p> 
+            </div>
+
+            <p class="desc"><small>{{ producto.descripcion }}</small></p>
+            <p class="precio"><strong>${{ producto.precio }}</strong></p>
+
+            <div class="etiquetas">
+              <ion-badge *ngIf="producto.popular" class="popular" style="background-color: #cca23a !important">Popular</ion-badge>
+              <ion-badge *ngIf="producto.nuevo" class="new" style="background-color: #5f055f !important">Nuevo</ion-badge>
+              <ion-badge *ngIf="producto.recomendado" class="promo" style="background-color: #cca23a !important">Recomendado</ion-badge>
+              <ion-badge *ngIf="producto.promocion" class="recommended" style="background-color: #5f055f !important">Promo</ion-badge>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

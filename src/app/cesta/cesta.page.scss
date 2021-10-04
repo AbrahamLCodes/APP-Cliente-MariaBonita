@@ -1,0 +1,550 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section1{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+    }
+    .section1 main{
+      width: 90%;
+      padding: 80px 0px 0px;
+      margin: 0px 5%;
+    }
+    .section1 main .flexElement{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0%;
+      }
+
+      .section1 main .flexElement button{
+       width: 100%;
+       font-size: 3.7vw;
+      }
+
+    
+    .section1 main .sucursales{
+        width: 100%;
+        height: 15vh;
+        min-height: 150px;
+        margin-top: 0px;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+   
+   
+    .section1 main .sucursales .itemSuc{
+        padding: 10px;
+        width: 45%;
+        min-width: 45%;
+        margin-right: 15px;
+        height: 100%;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden ;
+        background-size: cover;
+        background-position: center center;
+        background-color: rgba(243, 243, 243, 0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .section1 main .sucursales .itemSuc .group{
+        width: 90%;
+        margin: 5% 5% 0px;
+        overflow: hidden;
+        border-radius: 50px;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .sucursales .itemSuc .group .trash{
+        background-color: #cca23a !important;
+    }
+    .section1 main .sucursales .itemSuc .group button{
+        width: 35%;
+        height: 42px;
+        padding: 10px 0;
+        border-radius: 0px;
+    }
+    .section1 main .sucursales .itemSuc .group input{
+        width: 30%;
+        height: 42px;
+        background-color: #ffaa00;
+        color: white;
+        padding: 0px 5%;
+        text-align: center;
+        border-left: solid 1px white;
+        border-right: solid 1px white;
+    }
+    .section1 main .sucursales .itemSuc .info{
+        padding: 0px 10px 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .sucursales .itemSuc .info p{
+        font-size: 4vw;
+        font-weight: 300;
+    }
+    .section1 main .sucursales .itemSuc .info .precio{
+        margin-top: 5%;
+        font-size: 5vw; 
+    }
+
+    .section1 main form{
+      width: 100%;
+      height: auto;
+    }
+    .section1 main form textarea{
+        padding: 3%;
+        margin: 5% 0px;
+        width: 100%;
+        color: #343434;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .section1 main form .cupon{
+        margin: 3% 0px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .section1 main form input{
+        width: 100%;
+        color: #343434;
+        background-color: white;
+    }
+    .section1 main form .desgloce{
+        border-radius: 10px;
+        padding: 5% 3%;
+        width: 100%;
+        background-color: rgba(243, 243, 243, 0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    .section1 main form .desgloce .itemDes{
+        width: 100%;
+        display: flex;
+        margin: 3% 0%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main form .desgloce .itemDes .pullText{
+        margin-left: auto;
+    }
+    .section1 main form .desgloce  input{
+       width: 100%;
+       height: auto;
+       border-radius: 50px;
+       padding: 2% 4%;
+       background-color: white;
+       margin: 2% 0%;
+    }
+    .section1 main form .desgloce  button{
+        width: 100%;
+        height: auto;
+        background-color: #4c0607;
+        margin: 2% 0%;
+     }
+
+  
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .section1{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20%;
+      }
+      .section1 main{
+        width: 90%;
+        padding: 15% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main .flexElement{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0%;
+      }
+
+      .section1 main .flexElement button{
+       width: 100%;
+       font-size: 3.7vw;
+      }
+
+    
+    .section1 main .sucursales{
+        width: 100%;
+        height: 18vh;
+        margin-top: 0px;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+   
+   
+    .section1 main .sucursales .itemSuc{
+        padding: 10px;
+        width: 30%;
+        min-width: 30%;
+        margin-right: 15px;
+        height: 100%;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden ;
+        background-size: cover;
+        background-position: center center;
+        background-color: rgba(243, 243, 243, 0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .section1 main .sucursales .itemSuc .group{
+        width: 90%;
+        margin: 5% 5% 0px;
+        overflow: hidden;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+    .section1 main .sucursales .itemSuc .group .trash{
+        background-color: #cca23a !important;
+    }
+    .section1 main .sucursales .itemSuc .group button{
+        width: 35%;
+        height: 45px;
+        padding: 10px 0;
+        border-radius: 0px;
+    }
+    .section1 main .sucursales .itemSuc .group input{
+        width: 30%;
+        height: 45px;
+        margin: 0px;
+        background-color: #ffaa00;
+        color: white;
+        text-align: center;
+        border-left: solid 1px white;
+        border-right: solid 1px white;
+    }
+    .section1 main .sucursales .itemSuc .info{
+        padding: 0px 10px 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .sucursales .itemSuc .info p{
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    .section1 main .sucursales .itemSuc .info .precio{
+        margin-top: 5%;
+        font-size: 4vw; 
+    }
+
+    .section1 main form{
+      width: 70%;
+      margin: 0px 15%;
+      height: auto;
+    }
+    .section1 main form textarea{
+        padding: 3%;
+        margin: 5% 0px;
+        width: 100%;
+        color: #343434;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .section1 main form .cupon{
+        margin: 3% 0px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .section1 main form input{
+        width: 100%;
+        color: #343434;
+        background-color: white;
+        padding: 0px 3%;
+    }
+    .section1 main form .desgloce{
+        border-radius: 10px;
+        padding: 5% 3%;
+        width: 100%;
+        background-color: rgba(243, 243, 243, 0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    .section1 main form .desgloce .itemDes{
+        width: 100%;
+        display: flex;
+        margin: 3% 0%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main form .desgloce .itemDes .pullText{
+        margin-left: auto;
+    }
+    .section1 main form .desgloce  input{
+       width: 100%;
+       height: auto;
+       border-radius: 50px;
+       padding: 2% 4%;
+       text-align: center;
+       color: #343434;
+       background-color: white;
+       margin: 2% 0%;
+    }
+    .section1 main form .desgloce  button{
+        width: 100%;
+        height: auto;
+        background-color: #4c0607;
+        margin: 2% 0%;
+     }
+
+}
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1366px) {
+        .section1{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+          }
+          .section1 main{
+            width: 90%;
+            max-width: 1440px;
+            padding: 7% 0px 0px;
+            margin: 0px auto;
+            text-align: center;
+          }
+          .section1 main .flexElement{
+            width: 30%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3% auto;
+          }
+    
+          .section1 main .flexElement button{
+           width: 100%;
+           font-size: 13pt;
+          }
+    
+        
+        .section1 main .sucursales{
+            width: 100%;
+            height: auto;
+            margin-top: 0px;
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+        }
+       
+       
+        .section1 main .sucursales .itemSuc{
+            padding: 10px;
+            width: 20%;
+            min-width: 20%;
+            margin-right: 15px;
+            height: 100%;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden ;
+            background-size: cover;
+            background-position: center center;
+            background-color: rgba(243, 243, 243, 0.7);
+            -webkit-backdrop-filter: saturate(180%) blur(10px);
+            backdrop-filter: saturate(180%) blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        .section1 main .sucursales .itemSuc .group{
+            width: 90%;
+            margin: 5% 5% 0px;
+            overflow: hidden;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            text-align: center;
+        }
+        .section1 main .sucursales .itemSuc .group .trash{
+            background-color: #cca23a !important;
+        }
+        .section1 main .sucursales .itemSuc .group button{
+            width: 35%;
+            height:45px;
+            padding: 10px 0;
+            border-radius: 0px;
+            font-size: 20pt;
+        }
+        .section1 main .sucursales .itemSuc .group input{
+            width: 30%;
+            height: 45px;
+            margin: 0px;
+            background-color: #ffaa00;
+            color: white;
+            text-align: center;
+            border-left: solid 1px white;
+            border-right: solid 1px white;
+            text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.78);
+            font-size: 18pt;
+        }
+        .section1 main .sucursales .itemSuc .info{
+            padding: 0px 10px 0px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section1 main .sucursales .itemSuc .info p{
+            font-size: 14pt;
+            font-weight: 300;
+        }
+        .section1 main .sucursales .itemSuc .info .precio{
+            margin-top: 1%;
+            font-size: 15pt; 
+        }
+    
+        .section1 main form{
+          width: 100%;
+          margin: 0px 0%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .section1 main form .contUno{
+            width: 48%;
+            margin: 1%;
+            height: auto;
+          }
+          .section1 main form .contDos{
+            width: 48%;
+            margin: 1%;
+            height: auto;
+          }
+        .section1 main form textarea{
+            padding: 3%;
+            margin: 5% 0px;
+            width: 100%;
+            color: #343434;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 12pt;
+        }
+        .section1 main form .cupon{
+            margin: 3% 0px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 50px;
+            height: 40px;
+            overflow: hidden;
+        }
+        .section1 main form .cupon button{
+            font-size: 13pt;
+            height: 40px;
+        }
+    
+        .section1 main form input{
+            width: 100%;
+            color: #343434;
+            font-size: 12pt;
+            background-color: white;
+            padding: 0px 3%;
+        }
+        .section1 main form .desgloce{
+            border-radius: 10px;
+            padding: 20px 20px;
+            width: 100%;
+            background-color: rgba(243, 243, 243, 0.7);
+            -webkit-backdrop-filter: saturate(180%) blur(10px);
+            backdrop-filter: saturate(180%) blur(10px);
+        }
+        .section1 main form .desgloce .itemDes{
+            width: 100%;
+            display: flex;
+            margin: 3% 0%;
+            justify-content: center;
+            align-items: center;
+        }
+        .section1 main form .desgloce .itemDes .pullText{
+            margin-left: auto;
+        }
+        .section1 main form .desgloce  input{
+           width: 100%;
+           height: auto;
+           border-radius: 50px;
+           padding: 2% 4%;
+           text-align: center;
+           color: #343434;
+           background-color: white;
+           margin: 2% 0%;
+        }
+        .section1 main form .desgloce  button{
+            width: 100%;
+            height: auto;
+            background-color: #4c0607;
+            margin: 2% 0% 0%;
+            font-size: 13pt;
+         }
+    }

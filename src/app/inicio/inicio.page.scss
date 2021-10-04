@@ -1,0 +1,1093 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section1{
+    width: 100%;
+    height: auto;
+  }
+  .section1 main{
+    width: 90%;
+    padding: 80px 0px 0px;
+    margin: 0px 5%;
+  }
+
+  .section1 main .imagen{
+    width: 60%;
+    min-width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 60%;
+    min-height: 60%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden ;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .section1 main .imagen img{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .section1 main .imagen .boton{
+    width: 65%;
+    margin: -11% 17.5% 0px;
+    overflow: hidden;
+    border-radius: 50px;
+    height: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .section1 main .imagen .boton button{
+      width: 70%;
+      font-size: 10pt;
+  }
+
+  .section1 main .flexElement{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section1 main .flexElement button{
+        width: auto;
+        height: auto;
+        margin: 2%;
+        font-size: 10pt;
+        //display: flex;
+        // position: absolute;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // contain: layout size style;
+        // overflow: hidden;
+        // white-space: normal;
+        // word-wrap: break-word;
+        // overflow-wrap: break-word;
+    }
+  
+
+    .section1 main .flexElement .sucursal{
+        margin-right: auto;
+        background-color: #ffaa00;
+      }
+
+  .section1 main form{
+      display: flex;
+      width: 100%;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(243, 243, 243, 0.7);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+      backdrop-filter: saturate(180%) blur(10px);
+      border-radius: 50px;
+      overflow: hidden;
+      margin-bottom: 15px;
+  }
+  .section1 main form input{
+     width: 70%;
+     height: 100%;
+     color: black;
+     padding: 0px 5%;
+     background-color: transparent;
+  }
+  .section1 main form button{
+      width: 30%;
+      height: 100%;
+      font-size: 16pt;
+      border-radius: 50px;
+      background-color: #4c0607;
+   }
+   .section1 main .eventTitulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 main .eventTitulo button{
+    width: auto;
+    height: auto;
+    padding: 2% 4%;
+    margin: 0px 2%;
+    font-size: 4vw;
+
+}
+.section1 main .eventTitulo button:first-child{
+    margin-left: auto;
+ 
+ }
+.section1 main .eventTitulo .active{
+   background-color: #ffaa00;
+
+}
+
+   .section1 main .eventos{
+    width: 100%;
+    height: 23vh;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+
+.section1 main .eventos .itemEvent{
+    width: 80%;
+    min-width: 80%;
+    margin-right: 15px;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.section1 main .eventos .itemEvent .infoEvento{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(40,40,40,0.7) 0%, rgba(23,23,23,0.9556197478991597) 65%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 main .eventos .itemEvent .infoEvento .txt{
+    padding: 2% 4%;
+    width: 70%;
+    height: auto;
+    margin-left: 30%;
+    text-align: right;
+
+
+}
+.section1 main .eventos .itemEvent .infoEvento .txt h3{
+    margin: 0px 0px 2%;
+
+
+}
+.section1 main .eventos .itemEvent .infoEvento .txt h5{
+    margin: 0px 0px 2%;
+
+
+}
+
+.section1 main .eventos .itemEvent .infoEvento .txt button{
+    margin: 5% 0px 0%;
+    padding: 5% ;
+
+}
+
+
+   .section1 main .promociones{
+    width: 100%;
+    height: 30vh;
+    margin-top: 15px;
+    margin-bottom: 10%;
+}
+
+
+.section1 main .promociones .itemSuc{
+    width: 80%;
+    min-width: 80%;
+    margin-right: 15px;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden ;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+  .section1 main .sucursales{
+      width: 100%;
+      height: 37vh;
+      max-height: 240px;
+      margin-top: 15px;
+      margin-bottom: 10%;
+  }
+ 
+ 
+  .section1 main .sucursales .itemSuc{
+      width: 45%;
+      min-width: 45%;
+      margin-right: 15px;
+      height: 100%;
+      min-height: 200px;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden ;
+      background-size: cover;
+      background-position: center center;
+      background-color: rgba(243, 243, 243, 0.7);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+      backdrop-filter: saturate(180%) blur(10px);
+  }
+  .section1 main .sucursales .itemSuc .img{
+      width: 100%;
+      height: 60%;
+      overflow: hidden;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .section1 main .sucursales .itemSuc .img .cantItem{
+      width: 20%;
+      padding: 5%;
+      background-color: #4c0607;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-right-radius: 10px;
+
+  }
+  .section1 main .sucursales .itemSuc .img .cantItem p{
+      color: white;
+  }
+  .section1 main .sucursales .itemSuc .divMain{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      background: rgb(255,255,255);
+      background: linear-gradient(177deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 84%);
+  }
+  .section1 main .sucursales .itemSuc .group{
+      width: 65%;
+      margin: -13% 17.5% 0px;
+      overflow: hidden;
+      border-radius: 50px;
+      height: auto;
+      text-align: center;
+  }
+  .section1 main .sucursales .itemSuc .group button{
+      width: 50%;
+      height: 100%;
+      padding: 10px 0;
+      border-radius: 0px;
+  }
+  .section1 main .sucursales .itemSuc .info{
+      padding: 0px 10px 10px;
+      width: 100%;
+      height: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .section1 main .productos{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+  }
+
+  .section1 main .productos .itemProducto{
+      margin-bottom: 5%;
+      width: 100%;
+      height: 16vh;
+      min-height:150px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .section1 main .productos .itemProducto .img{
+      border-radius: 10px;
+      width: 40%;
+      margin-right: 3%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      overflow: hidden;
+  }
+  .section1 main .productos .itemProducto .img .cantItem{
+      width: 20%;
+      padding: 5%;
+      background-color: #4c0607;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-right-radius: 10px;
+
+  }
+  .section1 main .productos .itemProducto .img .cantItem p{
+      color: white;
+  }
+   .section1 main .productos .itemProducto .info{
+      width: 57%;
+      height: 100%;
+  }
+  .section1 main .productos .itemProducto .info .desc{
+      width: 100%;
+      height: auto;
+      margin: 3% 0%;
+  }
+  .section1 main .productos .itemProducto .info .titulo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2%;
+  }
+  .section1 main .productos .itemProducto .info .titulo .group{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      overflow: hidden;
+      margin-left: 5%;
+  }
+  .section1 main .productos .itemProducto .info .titulo button{
+      width: 50%;
+      height: auto;
+      font-size: 12pt;
+      border-radius: 0px;
+      background-color: #4c0607;
+  }
+
+  .section1 main .productos .itemProducto .info .etiquetas{
+      width: 100%;
+      display: flex;
+      margin: 2% 0px;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+  }
+  .section1 main .productos .itemProducto .info .etiquetas ion-badge{
+      width: auto;
+      min-width: 75px;
+      text-align: center;
+      padding: 3px 5%;
+      margin-right: 3%;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.78);
+      border-radius: 30px;
+  }
+  
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .section1{
+      width: 100%;
+      height: auto;
+    }
+    .section1 main{
+      width: 90%;
+      padding: 15% 0px 0px;
+      margin: 0px auto;
+    }
+    .section1 main .flexElement{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section1 main .eventTitulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .eventTitulo button{
+        width: auto;
+        height: auto;
+        padding: 2% 4%;
+        margin: 0px 2%;
+        font-size: 2vw;
+    
+    }
+    .section1 main .eventTitulo button:first-child{
+        margin-left: auto;
+     
+     }
+    .section1 main .eventTitulo .active{
+       background-color: #ffaa00;
+    
+    }
+    
+    .section1 main .eventos{
+        width: 100%;
+        height: 23vh;
+        margin-top: 15px;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+    
+    
+    .section1 main .eventos .itemEvent{
+        width: 80%;
+        min-width: 80%;
+        margin-right: 15px;
+        height: 95%;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+    }
+    .section1 main .eventos .itemEvent .infoEvento{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(40,40,40,0.7) 0%, rgba(23,23,23,0.9556197478991597) 65%);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .eventos .itemEvent .infoEvento .txt{
+        padding: 2% 4%;
+        width: 70%;
+        height: auto;
+        margin-left: 30%;
+        text-align: right;
+    
+    
+    }
+    .section1 main .eventos .itemEvent .infoEvento .txt h3{
+        margin: 0px 0px 2%;
+    
+    
+    }
+    .section1 main .eventos .itemEvent .infoEvento .txt h5{
+        margin: 0px 0px 2%;
+    
+    
+    }
+    
+    .section1 main .eventos .itemEvent .infoEvento .txt button{
+        margin: 5% 0px 0%;
+        padding: 5% ;
+    
+    }
+    
+    .section1 main .flexElement .sucursal{
+        margin-right: auto;
+        background-color: #ffaa00;
+      }
+
+  .section1 main form{
+      display: flex;
+      width: 80%;
+      margin:3% 10%;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(243, 243, 243, 0.7);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+      backdrop-filter: saturate(180%) blur(10px);
+      border-radius: 50px;
+      overflow: hidden;
+      margin-bottom: 5%;
+  }
+  .section1 main form input{
+     width: 60%;
+     height: 100%;
+     color: #4c0607;
+     padding: 0px 5%;
+     background-color: transparent;
+  }
+  .section1 main form button{
+      width: 40%;
+      height: 100%;
+      border-radius: 50px;
+      background-color: #4c0607;
+   }
+
+   .section1 main .promociones{
+    width: 100%;
+    height: 30vh;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+
+.section1 main .promociones .itemSuc{
+    width: 50%;
+    min-width: 50%;
+    margin-right: 15px;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden ;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+  .section1 main .sucursales{
+      width: 100%;
+      height: 22vh;
+      margin-top: 15px;
+      margin-bottom: 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+  }
+ 
+ 
+  .section1 main .sucursales .itemSuc{
+      width: 30%;
+      min-width: 30%;
+      margin-right: 15px;
+      height: 100%;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden ;
+      background-size: cover;
+      background-position: center center;
+      background-color: rgba(243, 243, 243, 0.7);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+      backdrop-filter: saturate(180%) blur(10px);
+  }
+  .section1 main .sucursales .itemSuc .img{
+      width: 100%;
+      height: 60%;
+      overflow: hidden;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .section1 main .sucursales .itemSuc .img .cantItem{
+      width: 20%;
+      padding: 5%;
+      background-color: #4c0607;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-right-radius: 10px;
+
+  }
+  .section1 main .sucursales .itemSuc .img .cantItem p{
+      color: white;
+  }
+  .section1 main .sucursales .itemSuc .divMain{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      background: rgb(255,255,255);
+      background: linear-gradient(177deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 84%);
+  }
+  .section1 main .sucursales .itemSuc .group{
+      width: 65%;
+      margin: -13% 17.5% 0px;
+      overflow: hidden;
+      border-radius: 50px;
+      height: auto;
+      text-align: center;
+  }
+  .section1 main .sucursales .itemSuc .group button{
+      width: 50%;
+      height: 100%;
+      padding: 10px 0;
+      border-radius: 0px;
+  }
+  .section1 main .sucursales .itemSuc .info{
+      padding: 0px 10px 10px;
+      width: 100%;
+      height: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .section1 main .productos{
+      width: 100%;
+      height: auto;
+      margin-bottom: 30%;
+  }
+
+  .section1 main .productos .itemProducto{
+      margin-bottom: 5%;
+      width: 100%;
+      height: 18vh;
+      min-height:140px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .section1 main .productos .itemProducto .img{
+      border-radius: 10px;
+      width: 30%;
+      margin-right: 3%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      overflow: hidden;
+  }
+  .section1 main .productos .itemProducto .img .cantItem{
+      width: 20%;
+      padding: 5%;
+      background-color: #4c0607;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-right-radius: 10px;
+
+  }
+  .section1 main .productos .itemProducto .img .cantItem p{
+      color: white;
+  }
+   .section1 main .productos .itemProducto .info{
+      width: 67%;
+      height: 100%;
+  }
+  .section1 main .productos .itemProducto .info .desc{
+      width: 100%;
+      height: auto;
+      margin: 3% 0%;
+  }
+  .section1 main .productos .itemProducto .info .titulo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2%;
+  }
+  .section1 main .productos .itemProducto .info .titulo .group{
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      overflow: hidden;
+      margin-left: 25%;
+  }
+  .section1 main .productos .itemProducto .info .titulo button{
+      width: 50%;
+      height: auto;
+      font-size: 12pt;
+      border-radius: 0px;
+      background-color: #4c0607;
+  }
+
+  .section1 main .productos .itemProducto .info .etiquetas{
+      width: 100%;
+      display: flex;
+      margin: 2% 0px;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+  }
+  .section1 main .productos .itemProducto .info .etiquetas p{
+      width: auto;
+      height: auto;
+      min-width: 75px;
+      text-align: center;
+      padding: 10px 5%;
+      margin-right: 3%;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.78);
+      border-radius: 30px;
+  }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {}
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1366px) {
+    .section1{
+        width: 100%;
+        height: auto;
+      }
+      .section1 main{
+        width: 90%;
+        max-width: 1440px;
+        padding: 5% 0px 0px;
+        margin: 0px auto;
+      }
+      .section1 main h1{
+       text-align: center;
+      }
+      .section1 main .flexElement{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section1 main .eventTitulo{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .section1 main .eventTitulo button{
+          width: auto;
+          height: auto;
+          padding: 2% 4%;
+          margin: 0px 2%;
+          font-size: 2vw;
+      
+      }
+      .section1 main .eventTitulo button:first-child{
+          margin-left: auto;
+       
+       }
+      .section1 main .eventTitulo .active{
+         background-color: #ffaa00;
+      
+      }
+      
+      .section1 main .eventos{
+          width: 100%;
+          height: 23vh;
+          margin-top: 15px;
+          margin-bottom: 10%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          overflow-x: scroll;
+      }
+      
+      
+      .section1 main .eventos .itemEvent{
+          width: 80%;
+          min-width: 80%;
+          margin-right: 15px;
+          height: 95%;
+          text-align: center;
+          border-radius: 10px;
+          overflow: hidden ;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          
+      }
+      .section1 main .eventos .itemEvent .infoEvento{
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, rgba(40,40,40,0.7) 0%, rgba(23,23,23,0.9556197478991597) 65%);
+      
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .section1 main .eventos .itemEvent .infoEvento .txt{
+          padding: 2% 4%;
+          width: 70%;
+          height: auto;
+          margin-left: 30%;
+          text-align: right;
+      
+      
+      }
+      .section1 main .eventos .itemEvent .infoEvento .txt h3{
+          margin: 0px 0px 2%;
+      
+      
+      }
+      .section1 main .eventos .itemEvent .infoEvento .txt h5{
+          margin: 0px 0px 2%;
+      
+      
+      }
+      
+      .section1 main .eventos .itemEvent .infoEvento .txt button{
+          margin: 5% 0px 0%;
+          padding: 5% ;
+      
+      }
+      
+      .section1 main .flexElement .sucursal{
+          margin-right: auto;
+          background-color: #ffaa00;
+        }
+  
+    .section1 main form{
+        display: flex;
+        width: 30%;
+        margin:3% auto;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(243, 243, 243, 0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+        border-radius: 50px;
+        overflow: hidden;
+        margin-bottom: 5%;
+    }
+    .section1 main form input{
+        font-size: 12pt;
+       width: 60%;
+       height: 100%;
+       color: #4c0607;
+       padding: 0px 5%;
+       background-color: transparent;
+    }
+    .section1 main form button{
+        width: 40%;
+        font-size: 13pt;
+        height: 100%;
+        border-radius: 50px;
+        background-color: #4c0607;
+     }
+  
+     .section1 main .promociones{
+      width: 100%;
+      height: 30vh;
+      margin-top: 15px;
+      margin-bottom: 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+  }
+  
+  
+  .section1 main .promociones .itemSuc{
+      width: 30%;
+      min-width: 30%;
+      margin-right: 15px;
+      height: 100%;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden ;
+      background-size: cover;
+      background-position: center center;
+      
+  }
+  
+    .section1 main .sucursales{
+        width: 100%;
+        height: 30vh;
+        margin-top: 15px;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+   
+   
+    .section1 main .sucursales .itemSuc{
+        width: 15%;
+        min-width: 15%;
+        margin-right: 15px;
+        height: 100%;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden ;
+        background-size: cover;
+        background-position: center center;
+        background-color: rgba(243, 243, 243, 0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    .section1 main .sucursales .itemSuc .img{
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .section1 main .sucursales .itemSuc .img .cantItem{
+        width: 20%;
+        padding: 5%;
+        background-color: #4c0607;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 10px;
+  
+    }
+    .section1 main .sucursales .itemSuc .img .cantItem p{
+        color: white;
+    }
+    .section1 main .sucursales .itemSuc .divMain{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        background: rgb(255,255,255);
+        background: linear-gradient(177deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 84%);
+    }
+    .section1 main .sucursales .itemSuc .group{
+        width: 65%;
+        margin: -9% 17.5% 0px;
+        overflow: hidden;
+        border-radius: 50px;
+        height: auto;
+        text-align: center;
+    }
+    .section1 main .sucursales .itemSuc .group button{
+        width: 50%;
+        font-size: 13pt;
+        height: 100%;
+        padding: 10px 0;
+        border-radius: 0px;
+    }
+    .section1 main .sucursales .itemSuc .info{
+        padding: 0px 10px 10px;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .filtros{
+        width: 42%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main .filtros ion-item{
+       width: 48%;
+       margin: 1%;
+    }
+    .section1 main .productos{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  
+    .section1 main .productos .itemProducto{
+        margin: 3%;
+        width: 44%;
+        height: 200px;
+        min-height:140px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .section1 main .productos .itemProducto .img{
+        border-radius: 10px;
+        width: 30%;
+        margin-right: 3%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+    }
+    .section1 main .productos .itemProducto .img .cantItem{
+        width: 20%;
+        padding: 5%;
+        background-color: #4c0607;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 10px;
+  
+    }
+    .section1 main .productos .itemProducto .img .cantItem p{
+        color: white;
+    }
+     .section1 main .productos .itemProducto .info{
+        width: 67%;
+        height: 100%;
+    }
+    .section1 main .productos .itemProducto .info .desc{
+        width: 100%;
+        height: auto;
+        margin: 3% 0%;
+    }
+    .section1 main .productos .itemProducto .info .titulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    .section1 main .productos .itemProducto .info .titulo .group{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-left: 25%;
+    }
+    .section1 main .productos .itemProducto .info .titulo button{
+        width: 50%;
+        height: auto;
+        font-size: 12pt;
+        border-radius: 0px;
+        background-color: #4c0607;
+    }
+  
+    .section1 main .productos .itemProducto .info .etiquetas{
+        width: 100%;
+        display: flex;
+        margin: 2% 0px;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        flex-wrap: wrap;
+    }
+    .section1 main .productos .itemProducto .info .etiquetas p{
+        width: auto;
+        height: auto;
+        min-width: 75px;
+        text-align: center;
+        padding: 10px 5%;
+        margin: 1%;
+        color: white;
+        text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.78);
+        border-radius: 30px;
+    }
+  }

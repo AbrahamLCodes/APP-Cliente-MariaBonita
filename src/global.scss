@@ -1,0 +1,499 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+*{
+    list-style: none;
+    margin: 0px;
+    border: 0px;
+    text-decoration: none;
+    outline: none;
+}
+// Jubilat Regular
+
+// font-family: jubilat, serif;
+
+// font-weight: 400;
+
+// font-style: normal;
+
+
+// Jubilat Italic
+
+// font-family: jubilat, serif;
+
+// font-weight: 400;
+
+// font-style: italic;
+
+
+// Jubilat Bold
+
+// font-family: jubilat, serif;
+
+// font-weight: 700;
+
+// font-style: normal;
+
+
+// Jubilat Bold Italic
+
+// font-family: jubilat, serif;
+
+// font-weight: 700;
+
+// font-style: italic;
+
+
+// Jubilat Thin
+
+// font-family: jubilat-thin, serif;
+
+// font-weight: 400;
+
+// font-style: normal;
+
+
+// Jubilat Thin Italic
+
+// font-family: jubilat-thin, serif;
+
+// font-weight: 400;
+
+// font-style: italic;
+
+// ArponaSans Thin
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 100;
+
+// font-style: normal;
+
+
+// ArponaSans Thin Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 100;
+
+// font-style: italic;
+
+
+// ArponaSans ExtraLight
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 200;
+
+// font-style: normal;
+
+
+// ArponaSans ExtraLight Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 200;
+
+// font-style: italic;
+
+
+// ArponaSans Light
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 300;
+
+// font-style: normal;
+
+
+// ArponaSans Light Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 300;
+
+// font-style: italic;
+
+
+// ArponaSans Regular
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 400;
+
+// font-style: normal;
+
+
+// ArponaSans Regular Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 400;
+
+// font-style: italic;
+
+
+// ArponaSans Medium
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 500;
+
+// font-style: normal;
+
+
+// ArponaSans Medium Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 500;
+
+// font-style: italic;
+
+
+// ArponaSans SemiBold
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 600;
+
+// font-style: normal;
+
+
+// ArponaSans SemiBold Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 600;
+
+// font-style: italic;
+
+
+// ArponaSans Bold
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 700;
+
+// font-style: normal;
+
+
+// ArponaSans Bold Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 700;
+
+// font-style: italic;
+
+
+// ArponaSans ExtraBold
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 800;
+
+// font-style: normal;
+
+
+// ArponaSans ExtraBold Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 800;
+
+// font-style: italic;
+
+
+// ArponaSans Black
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 900;
+
+// font-style: normal;
+
+
+// ArponaSans Black Italic
+
+// font-family: arponasans, sans-serif;
+
+// font-weight: 900;
+
+// font-style: italic;
+
+ion-item{
+    --padding-start: 5px;
+    --background: transparent;
+}
+ion-textarea{
+    border: solid 1px #4c0607;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+ion-badge{
+    background-color: #4c0607 !important;
+    padding: 5px;
+    margin: 0px 10px;
+}
+ion-button{
+    margin: 0px 5px;
+}
+ion-slides{
+    overflow: hidden !important; /* Hide scrollbars */
+}
+ion-toggle{
+    --background: #4c060744;
+    --background-checked: #4c0607;
+    --handle-background: #cca23a;
+    --handle-background-checked: #cca23a;
+}
+ion-tab-bar{
+    padding: 7px 0px 15px;
+}
+ion-tab-button{
+    --color-selected: #4c0607;
+    --color: #4c06077d;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .botoneraMovil{
+        display: flex;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: lemongrass-script,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    color:#cca23a;
+    line-height: .8;
+    
+    }
+    h1{
+        text-align: center;
+        font-size: 14vw;
+    }
+    h2{
+        font-size: 8vw;
+    }
+    h3{
+        font-size: 6vw;
+    }
+    h4{
+        font-size: 5vw;
+    }
+    h5{
+        font-size: 4vw;
+    }
+    h6{
+        font-size: 3vw;
+    }
+    p,li,a,label,ion-item{
+        font-size: 12pt;
+        font-family: poppins, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color:#343434;
+        line-height: 1.2;
+        }
+        textarea, input{
+            font-size: 12pt;
+            font-family: poppins, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color:#343434;
+            line-height: 1.2;
+            padding-left: 15px;
+            }
+        button{
+            width: auto;
+            height: auto;
+            padding: 10px 8%;
+            background-color: #4c0607;
+            border-radius: 50px;
+            font-size: 13pt;
+            font-family: poppins, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color:#fff;
+            
+            }
+    .fondo{
+        background-image: url('../src/assets/images/fondo-app.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .botoneraMovil{
+        display: flex;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: lemongrass-script,sans-serif;
+font-weight: 400;
+font-style: normal;
+    color:#cca23a;
+    line-height: .8;
+        }
+        h1{
+            font-size: 9vw;
+            text-align: center;
+        }
+        h2{
+            font-size: 8vw;
+        }
+        h3{
+            font-size: 6vw
+        }
+        h4{
+            font-size: 5vw;
+        }
+        h5{
+            font-size: 4vw;
+        }
+        h6{
+            font-size: 3vw;
+        }
+        p,li,a,label,ion-item, input, textarea{
+            font-size: 2.5vw;
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:#343434;
+            line-height: 1;
+            }
+            textarea, input{
+                font-size: 2.5vw;
+                font-family: poppins, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                color:#343434;
+                line-height: 1.2;
+                }
+            button{
+
+                font-size: 3vw;
+                font-family: poppins, sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                color:#fff;
+                padding: 10px 8%;
+            background-color: #4c0607;
+            border-radius: 50px;
+                }
+    .fondo{
+        background-image: url('../src/assets/images/fondo-app.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1366px) {
+    .botoneraMovil{
+        display: none;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: lemongrass-script,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    color:#cca23a;
+        line-height: .8;
+        }
+        h1{
+            font-size: 5vw;
+        }
+        h2{
+            font-size: 4vw;
+        }
+        h3{
+            font-size: 3vw
+        }
+        h4{
+            font-size: 2vw;
+        }
+        p,li,a,label,ion-item, input, textarea{
+            font-size:13pt;
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:#343434;
+            line-height: 1;
+            }
+            textarea, input{
+                font-size: 2.5vw;
+                font-family: poppins, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                color:#343434;
+                line-height: 1.2;
+                }
+            button{
+
+                font-size: 3vw;
+                font-family: poppins, sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                color:#fff;
+                padding: 10px 8%;
+            background-color: #4c0607;
+            border-radius: 50px;
+                }
+    .fondo{
+        background-image: url('../src/assets/images/fondo-app.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}

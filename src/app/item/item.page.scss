@@ -1,0 +1,484 @@
+.list-ios {
+  background: var(--ion-item-background, var(--ion-background-color, rgba(255, 255, 255, 0.6)));
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .section1 main {
+    width: 90%;
+    padding: 80px 0px 0px;
+    margin: 0px 5%;
+  }
+
+  .section1 main .flexElement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 main .flexElement p {
+    font-weight: 200;
+    font-size: 28pt;
+  }
+
+  .section1 main .flexElement button {
+    margin-left: auto;
+  }
+
+  .section1 main .imagen {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    height: 25vh;
+    min-height: 270px;
+  }
+
+  .section1 main .cantItem {
+    width: 10%;
+    padding: 2%;
+    background-color: #4c0607;
+    position: absolute;
+    z-index: 9999;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+
+  }
+
+  .section1 main .cantItem p {
+    color: white;
+  }
+
+  .section1 main .group {
+    width: 30%;
+    height: auto;
+    z-index: 9999;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -6%;
+    display: flex;
+  }
+
+  .section1 main .group ion-label{
+    font-size: 16pt;
+    background-color: white;
+    padding: 6px;
+  }
+
+  .section1 main .group button {
+    width: 50%;
+    border-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .section1 main .group button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .section1 main .etiquetas {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .section1 main .etiquetas .popular {
+    width: auto;
+    height: auto;
+    margin: 0px 5px;
+    background-color: #cca23a !important;
+    padding: 5px 5%;
+    color: white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 4px rgb(150 150 150 / 78%);
+  }
+
+  .section1 main .etiquetas .nuevo {
+    width: auto;
+    height: auto;
+    margin: 0px 5px;
+    background-color: #5f055f !important;
+    padding: 5px 5%;
+    color: white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 4px rgb(150 150 150 / 78%);
+  }
+
+  .section1 main .opciones {
+    width: 100%;
+    height: auto;
+    margin: 5% 0px 5%;
+  }
+
+  .section1 main .opciones p {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+  }
+
+  .section1 main .btnPagar {
+    font-size: 13pt;
+    width: 100% !important;
+    margin: 0% 0% 25% !important;
+  }
+
+  .section1 main .list {
+    width: 100%;
+    height: 15vh;
+    margin: 10% 0%;
+    overflow: auto;
+  }
+
+  .section1 main .fin{
+    display: flex;
+  }
+
+  .section1 main .fin ion-label{
+    padding: 3px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .section1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .section1 main {
+    width: 70%;
+    padding: 17% 0px 0px;
+    margin: 0px auto;
+  }
+
+  .section1 main .flexElement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 main .flexElement p {
+    font-weight: 200;
+    font-size: 5vh;
+  }
+
+  .section1 main .flexElement button {
+    margin-left: auto;
+  }
+
+  .section1 main .imagen {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    height: 25vh;
+    min-height: 490px;
+  }
+
+  .section1 main .cantItem {
+    width: 5%;
+    padding: 1%;
+    position: absolute;
+    z-index: 9999;
+    background-color: #4c0607;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+
+  }
+
+  .section1 main .cantItem p {
+    color: white;
+  }
+
+  .section1 main .group {
+    width: 30%;
+    height: auto;
+    z-index: 9999;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -3.5%;
+    display: flex;
+  }
+
+  .section1 main .group ion-label{
+    font-size: 26pt;
+    background-color: white;
+    padding: 15px;
+  }
+
+  .section1 main .group button {
+    width: 50%;
+    border-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+  }
+
+  .section1 main .group button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .section1 main .etiquetas {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .section1 main .etiquetas .popular {
+    width: auto;
+    height: auto;
+    margin: 0px 5px;
+    background-color: #cca23a !important;
+    padding: 5px 5%;
+    color: white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 4px rgb(150 150 150 / 78%);
+  }
+
+  .section1 main .etiquetas .nuevo {
+    width: auto;
+    height: auto;
+    margin: 0px 5px;
+    background-color: #5f055f !important;
+    padding: 5px 5%;
+    color: white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 4px rgb(150 150 150 / 78%);
+  }
+
+  .section1 main .opciones {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin: 5% 15% 5%;
+  }
+
+  .section1 main .opciones p {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+  }
+
+  .section1 main .btnPagar {
+    font-size: 13pt;
+    width: 100% !important;
+    margin: 0% 0% 20% !important;
+  }
+
+  .section1 main .list {
+    width: 100%;
+    height: 10vh;
+    margin: 3% 0%;
+    overflow: auto;
+  }
+
+  .section1 main .fin{
+    display: flex;
+  }
+
+  .section1 main .fin ion-label{
+    padding: 3px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1366px) {
+  .section1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .section1 main {
+    width: 90%;
+    max-width: 1440px;
+    padding: 8% 0px 0px;
+    margin: 0px auto;
+  }
+
+  .section1 main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .vistaDesk {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .vistaDesk .elementLeft {
+    width: 30%;
+    margin: 0% 5%;
+
+  }
+
+  .vistaDesk .elementRight {
+    width: 45%;
+    margin-left: 5%;
+  }
+
+  .section1 main .flexElement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 main .flexElement p {
+    font-weight: 200;
+    font-size: 5vh;
+  }
+
+  .section1 main .flexElement button {
+    margin-left: auto;
+    font-size: 15pt;
+  }
+
+  .section1 main .imagen {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    height: 40vh;
+    min-height: 350px;
+  }
+
+  .section1 main .cantItem {
+    width: 3%;
+    position: absolute;
+    z-index: 9999;
+    padding: 1%;
+    background-color: #4c0607;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+
+  }
+
+  .section1 main .cantItem p {
+    color: white;
+  }
+
+  .section1 main .group {
+    width: 10%;
+    position: absolute;
+    z-index: 9999;
+    height: auto;
+    margin-left: auto;
+    margin-top: -1%;
+    margin-left: 0%;
+  }
+
+  .section1 main .group button {
+    width: 50%;
+    font-size: 13pt;
+    border-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .section1 main .group button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .section1 main .etiquetas {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .section1 main .etiquetas .popular {
+    width: auto;
+    height: auto;
+    margin: 0px 5px;
+    background-color: #cca23a !important;
+    padding: 5px 5%;
+    color: white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 4px rgb(150 150 150 / 78%);
+  }
+
+  .section1 main .etiquetas .nuevo {
+    width: auto;
+    height: auto;
+    margin: 0px 5px;
+    background-color: #5f055f !important;
+    padding: 5px 5%;
+    color: white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 4px rgb(150 150 150 / 78%);
+  }
+
+  .section1 main .opciones {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 5% 0% 5%;
+  }
+
+  .section1 main .opciones p {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+  }
+
+  .section1 main .btnPagar {
+    font-size: 13pt;
+    width: 50% !important;
+    margin: 0% 25% 5% !important;
+  }
+
+  .section1 main .list {
+    width: 100%;
+    height: 15vh;
+    overflow: auto;
+  }
+
+}

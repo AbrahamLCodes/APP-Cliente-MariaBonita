@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+
+
+  <section class="section1">
+    <main *ngIf="usuario">
+      <h1>Perfil
+      </h1>
+      <br>
+      <p>{{ usuario.username }}</p>
+      <p class="correoInfo">{{ usuario.email }}</p>
+     
+ 
+      <div class="btnLines">
+        <div class="btnItem">
+          <p>Mis direcciones</p> <button [routerLink]="['/misdirecciones']">Ir</button>
+        </div> 
+        <div class="btnItem" *ngIf="usuario.pedido_pendiente">
+          <p><strong>Pending order</strong></p> <button [routerLink]="['/pedidoexitoso']">Ir</button>
+        </div>
+        <div class="btnItem">
+          <p>Mis pedidos</p> <button [routerLink]="['/mispedidos']">Ir</button>
+        </div>
+        <div class="btnItem">
+          <p>Monedero</p> <button [routerLink]="['/monedero']">Ir</button>
+        </div>
+        <div class="btnItem">
+          <p>Editar información de perfil</p> <button [routerLink]="['/editarperfil']">Ir</button>
+        </div>
+        <div class="btnItem">
+          <p>Política de privacidad</p> <button>Ver</button>
+        </div>
+        <div class="btnItem">
+          <p>Términos y condiciones</p> <button >Ver</button>
+        </div>
+        <div class="btnItem">
+          <p>Newsletter</p> <button [routerLink]="['/suscripcion']">Ir</button>
+        </div>
+        <div class="btnItem">
+          <p>Quejas y sugerencias</p> <button [routerLink]="['/comentarios']">Ir</button>
+        </div>
+      </div>
+
+      <div class="redes">
+        <p><strong>Redes sociales</strong></p>
+        <a href="https://www.facebook.com/BusinessandSuites"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/hotelmariabonitacdj/"><i class="fab fa-instagram"></i></a>
+        <a href="https://hotelesmariabonita.com/"><i class="fas fa-globe"></i></a>
+      </div>
+
+      <div class="contLogout">
+        <button class="logout" (click)="cerrarSesion()">Cerrar sesión</button>
+      </div>
+      
+    </main>
+  </section>
+
+  <section class="fondo"></section>
+</ion-content>

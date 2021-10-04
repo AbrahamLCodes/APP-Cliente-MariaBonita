@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main *ngIf="usuario">
+      <h1>Notificaciones</h1> <br>
+      <p>Activa las casillas para recibir promociones y alertas.</p>
+      <br>
+
+      <div class="opciones">  
+        <div class="list">
+          <ion-list style="background: transparent;">
+            <ion-item lines="none" >
+              <ion-label>News</ion-label>
+              <ion-toggle (click)="updateUsuario('news')" [(ngModel)]="usuario.nuevos_platillos" checked="{{usuario.nuevos_platillos}}"></ion-toggle>
+            </ion-item>
+          </ion-list>
+  
+          <ion-list style="background: transparent;">
+            <ion-item lines="none" >
+              <ion-label>Promociones</ion-label>
+              <ion-toggle (click)="updateUsuario('promos')"  [(ngModel)]="usuario.recibir_promociones"></ion-toggle>
+            </ion-item>
+          </ion-list>
+  
+          <ion-list style="background: transparent;">
+            <ion-item lines="none" style="background: transparent;">
+              <ion-label>Noticias por temporada</ion-label>
+              <ion-toggle (click)="updateUsuario('seasonal')"  [(ngModel)]="usuario.recibir_platillos_temporada"></ion-toggle>
+            </ion-item>
+          </ion-list>
+
+          <ion-list style="background: transparent;">
+            <ion-item lines="none" style="background: transparent;">
+              <ion-label>Promociones de cumpleaños</ion-label>
+              <ion-toggle (click)="updateUsuario('birthday')"  [(ngModel)]="usuario.recibir_promociones_cumple"></ion-toggle>
+            </ion-item>
+          </ion-list>
+        </div>
+        <p><small>
+          Al marcar cualquier casilla, estaremos enviando correos electrónicos.
+           y notificaciones push solo cuando sea necesario, evitemos el spam juntos, recuerde que puede
+         desactívelos en esta sección cuando lo desee.
+
+        </small></p>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

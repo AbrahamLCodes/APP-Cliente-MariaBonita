@@ -1,0 +1,87 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main>
+      <h1>Productos en el carrito</h1>
+      <br>
+      <div class="flexElement">
+        <button>Esta compra abonará <span>$25.00</span> a tu monedero</button>
+      </div>
+      <br>
+
+      <ion-slides class="sucursales" pager="false" [options]="slideOpts">
+        <ion-slide class="itemSuc" *ngFor="let item of carrito; index as index">
+          <div>
+            <div class="info">
+              <div class="itemInfo">
+                <p><small><strong>{{ item.producto.titulo }}</strong></small></p> 
+                <p class="precio"><strong><span>${{ item.subtotal }}</span></strong></p>
+              </div>
+            </div>
+            <p><small>Extras: {{item.opcionales.length}}</small></p>
+            <div class="group">
+              <button (click)="eliminarItem(index)"><i class="fas fa-trash"></i></button>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+
+      <form  [formGroup]="carritoForm" action="">
+        <div class="contUno">
+          
+          <p><strong>Agregar nota para sucursal</strong></p>
+          <textarea formControlName="nota" name="" id="" cols="10" rows="5" style="border: solid 1px #4c0607;"></textarea>
+          
+          <!-- <p><strong>Do you have a coupon?</strong></p>
+          <div class="cupon" style="border: dashed 1px #4c0607;">
+            <input type="text" placeholder="Insert coupon">
+            <button><i class="fas fa-plus-circle"></i></button>
+          </div> -->
+        </div>
+  
+        <div class="contDos">
+          <ion-item lines="none" color="black" style="border-radius: 50px; margin: 3% 0%;">
+            <ion-label>Propina</ion-label>
+            <ion-select formControlName="propina" interface="action-sheet" multiple="false" placeholder="Seleccionar">
+              <ion-select-option value="0">0%</ion-select-option>
+              <ion-select-option value="5">5%</ion-select-option>
+              <ion-select-option value="10">10%</ion-select-option>
+              <ion-select-option value="15">15%</ion-select-option>
+              <ion-select-option value="20">20%</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <!-- <ion-item lines="none" color="black" style="border-radius: 50px; margin: 3% 0%;">
+            <ion-label>Order's type</ion-label>
+            <ion-select   interface="action-sheet" multiple="false" placeholder="Seleccionar">
+              <ion-select-option value="gfdg">Home delivery</ion-select-option>
+              <ion-select-option value="bacon">Order and pick up</ion-select-option>
+            </ion-select>
+          </ion-item> -->
+          
+          <div class="desgloce">
+            <p><strong>Detalles de la orden</strong></p>
+            <div class="itemDes">
+              <p>Subtotal:</p>
+              <p class="pullText"><strong>${{calcularSubTotalItems().toFixed(2)}}</strong></p>
+            </div>
+            <!-- <div class="itemDes">
+              <p>Delivery charges:</p>
+              <p class="pullText"><strong>$0.00</strong></p>
+            </div> -->
+            <div class="itemDes">
+              <p>Propina:</p>
+              <p class="pullText"><strong>{{ carritoForm.get("propina").value }}%</strong></p>
+            </div>
+            <div class="itemDes">
+              <p><strong>Total:</strong></p>
+              <p class="pullText"><strong>${{calculartotal().toFixed(2)}}</strong></p>
+            </div>
+            <button [routerLink]="['/home']">Seguir comprando</button>
+            <button (click)="goToPay()">Ir a pagar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

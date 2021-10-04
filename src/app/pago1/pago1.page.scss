@@ -1,0 +1,231 @@
+form.formStripe input{
+  color: black !important;
+  width: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30%;
+  }
+
+  .section1 main {
+    width: 90%;
+    padding: 80px 0px 0px;
+    margin: 0px 5%;
+  }
+
+  .section1 main .flexElement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0%;
+  }
+
+  .section1 main .flexElement button {
+    width: auto;
+    margin-left: auto;
+    font-size: 6vw;
+  }
+
+  .section1 main form {
+    width: 100%;
+    display: flex;
+    margin: 4% 0%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 50px;
+
+  }
+
+  .section1 main form input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+    padding-left: 5%;
+
+
+  }
+
+
+
+  .section1 main .itemDes {
+    width: 100%;
+    display: flex;
+    margin: 4% 0%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 main .itemDes button {
+    margin-left: auto;
+  }
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .section1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20%;
+  }
+
+  .section1 main {
+    width: 90%;
+    padding: 15% 0px 0px;
+    margin: 0px auto;
+  }
+
+  .section1 main .flexElement {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5% 0%;
+  }
+
+  .section1 main .flexElement button {
+    width: auto;
+    margin-left: auto;
+    font-size: 3.7vw;
+  }
+
+  .section1 main .margTablet {
+    width: 70%;
+    margin: 5% 15%;
+  }
+
+  .section1 main .itemDes {
+    width: 100%;
+    display: flex;
+    margin: 4% 0%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 main .itemDes button {
+    margin-left: auto;
+  }
+
+  .section1 main form {
+    width: 100%;
+    display: flex;
+    margin: 4% 0%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 50px;
+
+  }
+
+  .section1 main form input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+    padding-left: 5%;
+
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1366px) {
+  .section1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  .section1 main {
+    width: 90%;
+    max-width: 1440px;
+    padding: 7% 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .section1 main .flexElement {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1% 30%;
+  }
+
+  .section1 main .flexElement button {
+    width: auto;
+    margin-left: auto;
+    font-size: 18pt;
+  }
+
+  .section1 main .margTablet {
+    width: 70%;
+    margin: 1% 15%;
+  }
+
+  .section1 main .itemDes {
+    width: 70%;
+    display: flex;
+    margin: 2% 15%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .section1 main .itemDes button {
+    margin-left: auto;
+    font-size: 13pt;
+  }
+
+  .section1 main form {
+    width: 40%;
+    display: flex;
+    margin: 2% 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 50px;
+
+  }
+
+  .section1 main form input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+    font-size: 12pt;
+    padding-left: 2%;
+
+
+  }
+
+  .section1 main form button {
+    font-size: 13pt;
+
+  }
+}

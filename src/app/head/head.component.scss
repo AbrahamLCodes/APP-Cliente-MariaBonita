@@ -1,0 +1,536 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        height: 80px;
+        background-image: url('../../assets/images/header-fondo.png');
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        max-height: 120px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+   header main{
+    width: 90%;
+    margin: 20px 5% 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    header main .back{
+        font-size: 20pt;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+        margin: auto;
+        margin-left: 0px;
+        background-color: transparent;
+        }
+        header main .share{
+            color: #fff;
+            text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+            font-size: 20pt;
+            width: auto;
+            margin: 0% 15px;
+            margin-left: auto;
+            height: auto;
+            padding: 5px;
+            background-color: transparent;
+            }
+            header main .alertCont{
+                width: auto;
+                height: auto;
+                 }
+                 header main .alertCont P{
+                     position: absolute;
+                     top: 10%;
+                    margin-left: 2%;
+                     border-radius: 50%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 25px;
+                     height: 25px;
+                     color: white;
+                     background-color: #cca23a;
+                      }
+            header main .alertas{
+                font-size: 20pt;
+                width: auto;
+                height: auto;
+                margin: 0% 15px;
+                padding: 5px;
+                color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                background-color: transparent;
+                }
+                header main .cestaCont{
+                   width: auto;
+                   height: auto;
+                    }
+                    header main .cestaCont P{
+                        position: absolute;
+                        top: 10%;
+                        right: 9%;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 25px;
+                        height: 25px;
+                        color: white;
+                        background-color: #cca23a;
+                         }
+                header main  .cestaCont .cesta{
+                    color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                    font-size: 20pt;
+                    width: auto;
+                    height: auto;
+                    margin: 0% 15px;
+                    margin-right: 0px;
+                    padding: 5px;
+                    background-color: transparent;
+                    }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ header{
+        width: 100%;
+        height: 80px;
+        background-image: url('../../assets/images/header-fondo.png');
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        max-height: 120px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+   header main{
+    width: 90%;
+    margin: 20px 5% 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    header main .back{
+        font-size: 20pt;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        color: #fff;
+        text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+        margin: 0% 15px;
+        margin-left: 0px;
+        background-color: transparent;
+        }
+        header main .share{
+            color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+            font-size: 20pt;
+            width: auto;
+            margin: 0% 15px;
+            margin-left: auto;
+            height: auto;
+            padding: 5px;
+            background-color: transparent;
+            }
+            header main .alertCont{
+                width: auto;
+                height: auto;
+                 }
+                 header main .alertCont P{
+                     position: absolute;
+                     top: 10%;
+                    margin-left: 2%;
+                     border-radius: 50%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 25px;
+                     height: 25px;
+                     color: white;
+                     background-color: #ffaa00;
+                      }
+            header main .alertas{
+                font-size: 20pt;
+                width: auto;
+                height: auto;
+                margin: 0% 15px;
+                padding: 5px;
+                color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                background-color: transparent;
+                }
+                header main .cestaCont{
+                    width: auto;
+                    height: auto;
+                     }
+                     header main .cestaCont P{
+                         position: absolute;
+                         top: 10%;
+                         right: 10%;
+                         border-radius: 50%;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         width: 25px;
+                         height: 25px;
+                         color: white;
+                         background-color: #ffaa00;
+                          }
+                header main .cesta{
+                    color: #fff;
+                    text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                    font-size: 20pt;
+                    width: auto;
+                    height: auto;
+                    margin: 0% 15px;
+                    margin-right: 0px;
+                    padding: 5px;
+                    background-color: transparent;
+                    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        width: 100%;
+        height: 10.5vh;
+        background-image: url('../../assets/images/header-fondo.png');
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        max-height: 180px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    
+   header main{
+    width: 90%;
+    margin: 20px 5% 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    header main .back{
+        font-size: 32pt;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+        margin: 0% 15px;
+        margin-left: 0px;
+        background-color: transparent;
+        }
+        header main .share{
+            color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+            font-size: 32pt;
+            width: auto;
+            margin: 0% 15px;
+            margin-left: auto;
+            height: auto;
+            padding: 5px;
+            background-color: transparent;
+            }
+            header main .alertCont{
+                width: auto;
+                height: auto;
+                 }
+                 header main .alertCont P{
+                     position: absolute;
+                     top: 10%;
+                    margin-left: 1%;
+                     border-radius: 50%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 30px;
+                     height: 30px;
+                     color: white;
+                     background-color: #cca23a;
+                      }
+            header main .alertas{
+                font-size: 32pt;
+                width: auto;
+                height: auto;
+                margin: 0% 15px;
+                padding: 5px;
+                color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                background-color: transparent;
+                }
+                header main .cesta{
+                    color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                    font-size: 32pt;
+                    width: auto;
+                    height: auto;
+                    margin: 0% 15px;
+                    margin-right: 0px;
+                    padding: 5px;
+                    background-color: transparent;
+                    }
+                    header main .cestaCont{
+                        width: auto;
+                        height: auto;
+                         }
+                         header main .cestaCont P{
+                             position: absolute;
+                             top: 9%;
+                             right: 9%;
+                             border-radius: 50%;
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             width: 30px;
+                             height: 30px;
+                             color: white;
+                             background-color: #cca23a;
+                              }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+        header{
+        width: 100%;
+        height: 10vh;
+        background-image: url('../../assets/images/header-fondo.png');
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        max-height: 240px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+   header main{
+    width: 90%;
+    margin: 35px 5% 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    header main .back{
+        font-size: 35pt;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        color: #fff;
+        text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+        margin: 0% 15px;
+        margin-left: 0px;
+        background-color: transparent;
+        }
+        header main .share{
+            color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+            font-size: 35pt;
+            width: auto;
+            margin: 0% 20px;
+            margin-left: auto;
+            height: auto;
+            padding: 5px;
+            background-color: transparent;
+            }
+            header main .alertCont{
+                width: auto;
+                height: auto;
+                 }
+                 header main .alertCont P{
+                     position: absolute;
+                     top: 10%;
+                    margin-left: 1%;
+                     border-radius: 50%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 40px;
+                     height: 40px;
+                     color: white;
+                     background-color: #cca23a;
+                      }
+            header main .alertas{
+                font-size: 35pt;
+                width: auto;
+                height: auto;
+                margin: 0% 20px;
+                padding: 5px;
+                color: #fff;
+                text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                background-color: transparent;
+                }
+                header main .cesta{
+                    color: #fff;
+                    text-shadow: 0px 0px 12px rgba(150, 150, 150, 0.77);
+                    font-size: 35pt;
+                    width: auto;
+                    height: auto;
+                    margin: 0% 20px;
+                    margin-right: 0px;
+                    padding: 5px;
+                    background-color: transparent;
+}
+header main .cestaCont{
+    width: auto;
+    height: auto;
+     }
+     header main .cestaCont P{
+         position: absolute;
+         top: 10%;
+         right: 8%;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40px;
+         height: 40px;
+         color: white;
+         background-color: #cca23a;
+          }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1366px) {
+    header{
+        width: 100%;
+        height: 70px;
+        background-image: url('../../assets/images/header-fondo-desk.png');
+        background-size: cover;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        max-height: 240px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+   header main{
+    width: 90%;
+    height: 100%;
+    margin: 0px 5% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+   
+            header main .alertCont{
+                width: auto;
+                height: auto;
+                margin-left: auto;
+                 }
+                 header main .alertCont P{
+                     position: absolute;
+                     top: 10%;
+                    margin-left: 1.5%;
+                     border-radius: 50%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     width: 20px;
+                     height: 20px;
+                     font-size: 12pt;
+                     color: white;
+                     background-color: #cca23a;
+                      }
+                      header main .back{
+                        font-size: 20pt;
+                        display: none;
+                        width: auto;
+                        height: auto;
+                        padding: 5px;
+                        color: #343434;
+                        text-shadow: inherit;
+                        margin: 0% 15px;
+                        margin-left: auto;
+                        background-color: transparent;
+                        }
+                        header main .share{
+                            color: white;
+                            text-shadow: inherit;
+                            font-size: 15pt;
+                            width: auto;
+                            margin: 0% 10px;
+                            margin-left: auto;
+                            height: auto;
+                            padding: 5px;
+                            background-color: transparent;
+                            }
+            header main .alertas{
+                font-size: 15pt;
+                width: auto;
+                height: auto;
+                margin: 0% 10px;
+                padding: 5px;
+                color: white;
+                text-shadow: inherit;
+                background-color: transparent;
+                }
+                header main .cesta{
+                    color: white;
+                    text-shadow: inherit;
+                    font-size: 15pt;
+                    width: auto;
+                    height: auto;
+                    margin: 0% 10px;
+                    margin-right: 0px;
+                    padding: 5px;
+                    background-color: transparent;
+}
+header main .cestaCont{
+    width: auto;
+    height: auto;
+     }
+     header main .cestaCont P{
+         position: absolute;
+         top: 10%;
+         right: 4.5%;
+         font-size: 12pt;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 20px;
+         height: 20px;
+         color: white;
+         background-color: #cca23a;
+          }
+}

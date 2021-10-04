@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main>
+      <h1>
+        Quejas y <br> sugerencias
+      </h1>
+      <br>
+      <div class="contbtn">
+        <p>Tus comentarios nos ayudan a mejorar</p>
+      </div>
+      <p><small>Campos marcados con (*) son obligatorios</small></p>
+      <br>
+     
+      <form [formGroup]="formComentario" (ngSubmit)="submitComentario()">
+
+        <p>Nombre completo*</p>
+        <input formControlName="nombre" type="text" required style="border: solid 1px #4c0607;">
+
+        <p>Número de teléfono*</p>
+        <input formControlName="telefono" type="number" required style="border: solid 1px #4c0607;">
+
+        <p>Correo eléctronico*</p>
+        <input formControlName="email" type="email" required style="border: solid 1px #4c0607;">
+
+        <ion-item lines="none" style="border-radius: 50px; margin: 3% 0%;">
+          <ion-label>Asunto*</ion-label>
+          <ion-select formControlName="asunto" required interface="action-sheet" multiple="false" placeholder="Seleccionar">
+            <ion-select-option value="PETICION">Petición</ion-select-option>
+            <ion-select-option value="QUEJA">Queja</ion-select-option>
+            <ion-select-option value="RECLAMO">Reclamo</ion-select-option>
+            <ion-select-option value="SUGERENCIA">Sugerencia</ion-select-option>
+          </ion-select>
+        </ion-item>
+        
+        <ion-item lines="none" style="border-radius: 50px; margin: 3% 0%;">
+          <ion-label>Motivo*</ion-label>
+          <ion-select formControlName="motivo" required  interface="action-sheet" multiple="false" placeholder="Seleccionar">
+            <ion-select-option value="ATENCION">Calidad del producto</ion-select-option>
+            <ion-select-option value="CALIDAD">Tiempo de entrega</ion-select-option>
+            <ion-select-option value="TIEMPO">Instalaciones</ion-select-option>
+            <ion-select-option value="INSTALACIONES">Instalaciónes</ion-select-option>
+            <ion-select-option value="OTRO">Otro</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item lines="none" style="border-radius: 10px; margin: 3% 0%; ">
+          <ion-textarea formControlName="comentarios"  required rows="6" cols="20" placeholder="Comentarios*"></ion-textarea>
+        </ion-item>
+        
+        <button>Enviar</button>
+      </form>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

@@ -1,0 +1,149 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main *ngIf="ordenPendiente">
+      <h1>Order request successful</h1>
+      <br>
+      <!-- <p>Pedido número: ZR2GD_1Y</p> -->
+
+     <div class="deskElement">
+     
+      <div class="btnLines">
+        
+        <div class="btnItem">
+          <div class="txt">
+            <p><strong>Order's details</strong></p>
+            <p><strong>ID: </strong>{{ ordenPendiente.id }}</p>
+            <p *ngFor="let item of ordenPendiente.productos.carrito">
+              <strong>{{ item.producto.titulo}}</strong>
+              <br>
+              <small *ngFor="let opcionalItem of item.opcionales">
+                {{ opcionalItem.cantidad }} {{opcionalItem.opcional.producto.titulo}}
+              </small>
+            </p>
+            <p><strong>Total: </strong>${{ ordenPendiente.total.toFixed(2) }}</p>
+          <!-- <button class="nip"><small>NIP del pedido: DZWTT</small></button> -->
+          </div>
+          <button class="llamar"><small>Cancel</small></button>
+          <!-- <div class="fotoPerfil" style="background-image: url('../../assets/images/download.jpg');"></div> -->
+        </div>
+        
+
+
+        <div *ngIf="ordenPendiente.en_camino" class="btnItem">
+          <div class="txt">
+            <p><strong>Jonathan A. Pimentel</strong></p>
+            <p>Order's delivery guy<br>
+            <small>Servico: Amable y velóz</small> <br>
+            <small>Placas: A113-PX</small></p>
+            <button class="llamar"><small>Llamar ahora</small></button>
+          <!-- <button class="nip"><small>NIP del pedido: DZWTT</small></button> -->
+          </div>
+          <!-- <div class="fotoPerfil" style="background-image: url('../../assets/images/download.jpg');"></div> -->
+        </div>
+
+        <div *ngIf="ordenPendiente.finalizado" class="btnItem">
+          <div class="txt">
+            <p><strong>Order finished</strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/lupuorrc.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+
+        <div *ngIf="!ordenPendiente.ordena_y_recoge && ordenPendiente.en_camino" class="btnItem">
+          <div class="txt">
+            <p><strong>Delivery guy on the way </strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/uetqnvvg.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+
+        <!-- PARA CUANDO ES A DOMICILIO -->
+        <div *ngIf="!ordenPendiente.ordena_y_recoje && ordenPendiente.listo" class="btnItem">
+          <div class="txt">
+            <p><strong>Order prepared, searching a delivery guy to asign</strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/msoeawqm.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+
+        <!-- PARA CUANDO ES ORDENA Y RECOGE -->
+        <div *ngIf="ordenPendiente.ordena_y_recoje && ordenPendiente.listo" class="btnItem">
+          <div class="txt">
+            <p><strong>Order ready, you can pick it up</strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/jpdtnwas.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+
+        <div *ngIf="ordenPendiente.preparando" class="btnItem">
+          <div class="txt">
+            <p><strong>Preparing order</strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/coqbeapw.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+
+        <div *ngIf="ordenPendiente.aceptado" class="btnItem">
+          <div class="txt">
+            <p><strong>Order accepted</strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/jvihlqtw.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+
+        <div *ngIf="!ordenPendiente.aceptado" class="btnItem">
+          <div class="txt">
+            <p><strong>Waiting order to be accepted</strong></p>
+          </div>
+          <button class="indicador">
+            <lord-icon
+              src="https://cdn.lordicon.com/kbtmbyzy.json"
+              trigger="loop"
+              colors="primary:#ffffff,secondary:#e4e4e4"
+              stroke="100">
+            </lord-icon>
+          </button>
+        </div>
+          
+      </div>
+     </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

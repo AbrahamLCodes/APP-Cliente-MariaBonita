@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+
+  <section class="section1">
+    <main>
+      <h1>Mis pedidos</h1>
+      <br>
+      <div class="monedero">    
+          <p><strong>Historial de pedidos</strong></p>
+      </div>
+
+      <div class="movimientos">
+        <div *ngFor="let pedido of pedidos" class="movItem">
+          <div class="headMov">
+            <p *ngIf="pedido.cancelado" class="cancelado">Cancelado</p>
+          </div>
+
+          <div class="info">
+            <!-- <button  class="reOrder" style="width: 100%;">Re-Order</button> -->
+            <!-- <p>05DFFDF-4165DFG0-DFGD25</p> -->
+            <p class="identificador">{{ pedido.sucursal.nombre }}</p>
+            <div *ngFor="let productoItem of pedido.productos.carrito" class="infodesc">
+              <p class="desc"> 
+                <strong>{{ productoItem.producto.titulo }}</strong> <br>
+                <small *ngFor="let opcional of productoItem.opcionales">{{ opcional.cantidad }} {{ opcional.opcional.producto.titulo }}</small>
+                <br>
+              </p>
+              
+            </div>
+          </div>
+          <p class="precios">
+            <strong>Total: </strong><small>${{pedido.total}}</small>
+          </p>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>

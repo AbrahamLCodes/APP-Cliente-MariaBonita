@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <section class="section1">
+    <main>
+      <h1 style="text-align: center;">¡Bienvenido!</h1>
+      <br>
+
+      <div class="flexElement">
+        <button>Ver menú</button>
+      </div>
+      <br>
+
+      <ion-slides pager="false" class="sucursales">
+        <ion-slide *ngFor="let sucursal of sucursales" (click)="goToHome(sucursal)"  class="itemSuc" style="display: block;">
+          
+          <div class="img" [style]="appService.getImagen(sucursal.imagen.url, true)">
+          </div>
+          <div class="info">
+            <div class="itemInfo">
+              <p>{{ sucursal.nombre }}</p>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+
+    </main>
+  </section>
+  <section class="fondo"></section>
+</ion-content>
