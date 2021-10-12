@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class ApiclientService {
 
-  protected readonly strapiurl = 'https://strapi.togofreshco.com'
+  protected readonly strapiurl = 'https://strapi.apphotelesmariabonita.com'
 
   constructor(
     protected req: HttpClient,

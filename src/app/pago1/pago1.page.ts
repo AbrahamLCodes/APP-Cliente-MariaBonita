@@ -92,6 +92,8 @@ export class Pago1Page implements OnInit {
 
     this.cargarDirecciones()
     this.sucursal = this.menuService.getSucursalItemObj()
+    console.log(this.sucursal);
+    
     console.log("SUCURSAL", this.sucursal);
     
   }

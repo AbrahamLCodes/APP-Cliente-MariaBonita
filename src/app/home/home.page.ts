@@ -66,6 +66,8 @@ export class HomePage {
 
   goToProducto(producto) {
     this.menuService.setProductoItem(producto)
+    console.log(producto);
+    
     this.router.navigateByUrl("/item")
   }
 
@@ -111,13 +113,13 @@ export class HomePage {
 
   public getImagen(producto) {
     let imagen;
-    imagen = `https://strapi.togofreshco.com${this.productos.imagen.url}`;
+    imagen = `https://strapi.apphotelesmariabonita.com${this.productos.imagen.url}`;
     return imagen;
   }
 
   public getBackgroundImagen(producto) {
     let imagen;
-    imagen = `background-image: url(https://strapi.togofreshco.com${producto.imagen.url});`;
+    imagen = `background-image: url(https://strapi.apphotelesmariabonita.com${producto.imagen.url});`;
     return imagen;
   }
 

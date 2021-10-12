@@ -27,7 +27,7 @@ export class MenuService {
         sessionStorage.setItem(this.SUCURSAL_NOMBRE, JSON.stringify(sucursal))
     }
 
-    public getSucursalItemObj() {
+    public getSucursalItemObj() {        
         return JSON.parse(sessionStorage.getItem(this.SUCURSAL_NOMBRE))
     }
 

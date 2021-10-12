@@ -41,7 +41,7 @@
         
         <br>
 
-        <div *ngIf="sucursal.metodos_pago.pagoMonedero == true" class="itemDes" >
+        <div *ngIf="sucursal.metodos_pago.pago_monedero == true" class="itemDes" >
           <div class="textInfo">
             <p><strong>Monedero: </strong>${{ usuario.monedero }}</p>
             <p *ngIf="usuario.monedero <= infoCompra.total"><small>Para usar su billetera, el saldo debe ser igual o mayor que el precio del pedido.</small></p>
@@ -49,20 +49,20 @@
           <button *ngIf="usuario.monedero >= infoCompra.total">Seleccionar</button>
         </div>
 
-        <div *ngIf="sucursal.metodos_pago.pagoEfectivo == true" class="itemDes">
+        <div *ngIf="sucursal.metodos_pago.pago_efectivo == true" class="itemDes">
           <p><strong>Efectivo</strong></p>
           <button (click)="efectivo();">Seleccionar</button>
         </div>
 
-        <div *ngIf="sucursal.metodos_pago.pagoTarjeta == true" class="itemDes">
+        <div *ngIf="sucursal.metodos_pago.pago_tarjeta == true" class="itemDes">
           <p><strong>Tarjeta de credito debito</strong></p>
         </div>
 
-        <form *ngIf="sucursal.metodos_pago.pagoTarjeta == true" >
+        <form *ngIf="sucursal.metodos_pago.pago_tarjeta == true" >
           <input style="color: black" [(ngModel)]="nombreTarjeta" [ngModelOptions]="{standalone: true}" type="text" placeholder="Nombre de titular">
         </form>
-        <ngx-stripe-card *ngIf="sucursal.metodos_pago.pagoTarjeta == true" [options]="cardOptions" [elementsOptions]="elementsOptions"></ngx-stripe-card>
-        <button *ngIf="sucursal.metodos_pago.pagoTarjeta == true"  style="align: center !important;" (click)="createToken()" style="margin: 30px;" type="submit">Select</button>
+        <ngx-stripe-card *ngIf="sucursal.metodos_pago.pago_tarjeta == true" [options]="cardOptions" [elementsOptions]="elementsOptions"></ngx-stripe-card>
+        <button *ngIf="sucursal.metodos_pago.pago_tarjeta == true"  style="align: center !important;" (click)="createToken()" style="margin: 30px;" type="submit">Select</button>
       
       </div>
     </main>
